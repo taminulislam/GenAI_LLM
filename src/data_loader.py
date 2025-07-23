@@ -8,7 +8,10 @@ import logging
 from typing import Optional, Dict, List, Union, Tuple
 from datasets import Dataset, load_dataset
 import pandas as pd
-from .config import config
+try:
+    from .config import config
+except ImportError:
+    from config import config
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)

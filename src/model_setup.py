@@ -13,7 +13,10 @@ from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
 from typing import Tuple, Optional
 import logging
 
-from .config import config
+try:
+    from .config import config
+except ImportError:
+    from config import config
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)

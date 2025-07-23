@@ -14,9 +14,14 @@ from datasets import Dataset
 import json
 from datetime import datetime
 
-from .config import config
-from .model_setup import ModelManager
-from .data_loader import MedicalDataLoader
+try:
+    from .config import config
+    from .model_setup import ModelManager
+    from .data_loader import MedicalDataLoader
+except ImportError:
+    from config import config
+    from model_setup import ModelManager
+    from data_loader import MedicalDataLoader
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
