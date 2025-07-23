@@ -1,0 +1,16 @@
+============================================================
+MEDICAL LLM EVALUATION REPORT
+============================================================
+Model: microsoft/DialoGPT-small
+Evaluation Date: 2025-07-23T08:10:01.493905
+
+OVERALL RESULTS:
+  Overall Accuracy: 0.940
+  Total Questions: 50
+  Correct Answers: 47
+  Benchmarks Evaluated: 1
+
+BENCHMARK DETAILS:
+  medqa: 0.940 (47/50)
+
+============================================================

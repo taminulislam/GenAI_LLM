@@ -1,0 +1,50 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "all-processed",
+  "dataset_name": "medical-qa-datasets",
+  "dataset_size": 269619297,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/lavita/medical-qa-datasets@59d48e2739fff1de8803ee59b97547ad51846650/all-processed/train-00000-of-00001-a77e2814210655f1.parquet": {
+      "num_bytes": 155267884,
+      "checksum": null
+    }
+  },
+  "download_size": 155267884,
+  "features": {
+    "instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "output": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "__index_level_0__": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 424887181,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 269619297,
+      "num_examples": 239357,
+      "dataset_name": "medical-qa-datasets"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

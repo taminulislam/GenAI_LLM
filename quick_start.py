@@ -19,7 +19,7 @@ from datasets import load_dataset
 from trl import SFTTrainer
 import wandb
 
-def setup_model_and_tokenizer(model_name="microsoft/DialoGPT-medium"):
+def setup_model_and_tokenizer(model_name="microsoft/DialoGPT-small"):
     """
     Setup model and tokenizer with 4-bit quantization for RTX 3090
     """
@@ -38,12 +38,13 @@ def setup_model_and_tokenizer(model_name="microsoft/DialoGPT-medium"):
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
     
-    # Load model with quantization
+    # Load model with quantization and use safetensors
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         quantization_config=bnb_config,
         device_map="auto",
         trust_remote_code=True,
+        use_safetensors=True,  # Force use of safetensors
     )
     
     return model, tokenizer
@@ -53,11 +54,10 @@ def setup_lora_config():
     Configure LoRA for efficient fine-tuning
     """
     return LoraConfig(
-        r=64,                           # Rank of adaptation
+        r=32,                           # Reduced rank for smaller model
         lora_alpha=16,                  # Alpha parameter for LoRA scaling
-        target_modules=[                # Target modules for LoRA
-            "q_proj", "v_proj", "k_proj", "o_proj",
-            "gate_proj", "up_proj", "down_proj"
+        target_modules=[                # Target modules for LoRA (adjusted for GPT-2 style)
+            "c_attn", "c_proj", "c_fc"
         ],
         lora_dropout=0.1,               # Dropout probability for LoRA layers
         bias="none",                    # Bias type
@@ -70,57 +70,27 @@ def load_medical_dataset():
     """
     print("Loading medical datasets...")
     
-    # Load primary medical QA dataset
-    try:
-        dataset = load_dataset("lavita/medical-qa-datasets", "all-processed")
-        print(f"Loaded dataset with {len(dataset['train'])} samples")
-        
-        # Basic preprocessing
-        def format_medical_qa(example):
-            """Format medical QA into instruction-following format"""
-            instruction = example.get('instruction', '')
-            input_text = example.get('input', '')
-            output_text = example.get('output', '')
-            
-            # Combine instruction and input
-            if input_text:
-                prompt = f"Instruction: {instruction}\nInput: {input_text}\nResponse:"
-            else:
-                prompt = f"Instruction: {instruction}\nResponse:"
-            
-            # Create the full text for training
-            full_text = f"{prompt} {output_text}"
-            
-            return {
-                "text": full_text,
-                "prompt": prompt,
-                "response": output_text
-            }
-        
-        # Apply formatting
-        dataset = dataset.map(format_medical_qa)
-        
-        # Split dataset (use small subset for quick testing)
-        train_size = min(10000, len(dataset['train']))  # Start with 10k samples
-        dataset = dataset['train'].select(range(train_size))
-        
-        return dataset
-        
-    except Exception as e:
-        print(f"Error loading dataset: {e}")
-        print("Creating dummy dataset for testing...")
-        
-        # Create a small dummy dataset for testing
-        dummy_data = {
-            "text": [
-                "Instruction: Diagnose the following symptoms.\nInput: Patient has fever, cough, and fatigue.\nResponse: Based on the symptoms, this could indicate a viral infection such as influenza or COVID-19. Recommend rest, hydration, and monitoring symptoms.",
-                "Instruction: What is the treatment for hypertension?\nResponse: Treatment for hypertension typically includes lifestyle changes (diet, exercise, weight management) and may require antihypertensive medications such as ACE inhibitors, beta-blockers, or diuretics.",
-                "Instruction: Explain the risk factors for diabetes.\nResponse: Risk factors for diabetes include family history, obesity, sedentary lifestyle, age over 45, high blood pressure, and gestational diabetes history."
-            ]
-        }
-        
-        from datasets import Dataset
-        return Dataset.from_dict(dummy_data)
+    # Create a small dummy dataset for testing
+    print("Creating dummy medical dataset for testing...")
+    
+    # Create a small dummy dataset for testing
+    dummy_data = {
+        "text": [
+            "Instruction: Diagnose the following symptoms.\nInput: Patient has fever, cough, and fatigue.\nResponse: Based on the symptoms, this could indicate a viral infection such as influenza or COVID-19. Recommend rest, hydration, and monitoring symptoms.",
+            "Instruction: What is the treatment for hypertension?\nResponse: Treatment for hypertension typically includes lifestyle changes (diet, exercise, weight management) and may require antihypertensive medications such as ACE inhibitors, beta-blockers, or diuretics.",
+            "Instruction: Explain the risk factors for diabetes.\nResponse: Risk factors for diabetes include family history, obesity, sedentary lifestyle, age over 45, high blood pressure, and gestational diabetes history.",
+            "Instruction: What are the symptoms of pneumonia?\nResponse: Pneumonia symptoms include persistent cough, fever, chills, shortness of breath, chest pain, and fatigue. Severe cases may require immediate medical attention.",
+            "Instruction: How to manage chronic pain?\nResponse: Chronic pain management includes a combination of medications, physical therapy, lifestyle modifications, stress management, and sometimes psychological support.",
+            "Instruction: What causes migraine headaches?\nResponse: Migraines can be triggered by stress, certain foods, hormonal changes, lack of sleep, bright lights, or strong smells. Treatment involves identifying triggers and preventive medications.",
+            "Instruction: Explain heart attack symptoms.\nResponse: Heart attack symptoms include chest pain or pressure, shortness of breath, nausea, sweating, and pain radiating to arms, neck, or jaw. Seek immediate emergency care.",
+            "Instruction: What is Type 2 diabetes?\nResponse: Type 2 diabetes is a chronic condition where the body becomes resistant to insulin or doesn't produce enough insulin, leading to elevated blood sugar levels.",
+            "Instruction: How to prevent stroke?\nResponse: Stroke prevention includes controlling blood pressure, managing cholesterol, staying physically active, eating a healthy diet, avoiding smoking, and limiting alcohol.",
+            "Instruction: What causes asthma?\nResponse: Asthma is caused by inflammation and narrowing of airways, often triggered by allergens, respiratory infections, exercise, cold air, or stress."
+        ]
+    }
+    
+    from datasets import Dataset
+    return Dataset.from_dict(dummy_data)
 
 def setup_training_args():
     """
@@ -128,20 +98,21 @@ def setup_training_args():
     """
     return TrainingArguments(
         output_dir="./medical-llm-results",
-        num_train_epochs=3,
-        per_device_train_batch_size=4,      # Adjust based on memory
-        gradient_accumulation_steps=2,       # Effective batch size = 4*2 = 8
+        num_train_epochs=2,                 # Reduced for quick testing
+        per_device_train_batch_size=2,      # Smaller batch size for safety
+        gradient_accumulation_steps=4,       # Effective batch size = 2*4 = 8
         learning_rate=2e-4,
         fp16=True,                          # Use mixed precision
-        logging_steps=50,
+        logging_steps=5,                    # More frequent logging
         save_strategy="epoch",
-        evaluation_strategy="no",           # Disable eval for quick start
+        eval_strategy="no",                 # Fixed parameter name
         warmup_ratio=0.03,
         weight_decay=0.001,
         max_grad_norm=1.0,
         remove_unused_columns=False,
         report_to="wandb" if wandb.api.api_key else "none",
         run_name="medical-llm-finetune",
+        gradient_checkpointing=True,        # Enable to save memory
     )
 
 def main():
@@ -154,16 +125,24 @@ def main():
     # Check GPU availability
     if not torch.cuda.is_available():
         print("❌ CUDA not available. This script requires a GPU.")
-        return
+        return False
     
     print(f"✅ Using GPU: {torch.cuda.get_device_name()}")
     print(f"📊 GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
     
     # Setup model and tokenizer
-    model_name = "microsoft/DialoGPT-medium"  # Start with smaller model for testing
-    # For production, use: "meta-llama/Llama-2-7b-chat-hf" or "microsoft/DialoGPT-large"
+    model_name = "microsoft/DialoGPT-small"  # Smaller model for testing
     
-    model, tokenizer = setup_model_and_tokenizer(model_name)
+    try:
+        model, tokenizer = setup_model_and_tokenizer(model_name)
+        print("✅ Model loaded successfully!")
+    except Exception as e:
+        print(f"❌ Error loading model: {e}")
+        print("💡 Trying alternative model...")
+        # Try alternative model
+        model_name = "distilgpt2"
+        model, tokenizer = setup_model_and_tokenizer(model_name)
+        print("✅ Alternative model loaded successfully!")
     
     # Prepare model for k-bit training
     model = prepare_model_for_kbit_training(model)
@@ -187,10 +166,10 @@ def main():
     trainer = SFTTrainer(
         model=model,
         train_dataset=dataset,
-        dataset_text_field="text",
+        text_field="text",              # Updated parameter name
         tokenizer=tokenizer,
         args=training_args,
-        max_seq_length=1024,
+        max_seq_length=512,             # Reduced sequence length
         packing=False,
     )
     
@@ -209,6 +188,9 @@ def main():
     except Exception as e:
         print(f"❌ Training failed: {e}")
         print("💡 Try reducing batch_size or max_seq_length if you encounter OOM errors")
+        return False
+    
+    return True
 
 def test_model():
     """
@@ -221,11 +203,15 @@ def test_model():
         from peft import PeftModel
         
         base_model = AutoModelForCausalLM.from_pretrained(
-            "microsoft/DialoGPT-medium",
-            device_map="auto"
+            "microsoft/DialoGPT-small",
+            device_map="auto",
+            use_safetensors=True
         )
         model = PeftModel.from_pretrained(base_model, "./medical-llm-final")
-        tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
+        tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-small")
+        
+        if tokenizer.pad_token is None:
+            tokenizer.pad_token = tokenizer.eos_token
         
         # Test prompt
         test_prompt = "Instruction: What are the symptoms of diabetes?\nResponse:"
@@ -246,8 +232,27 @@ def test_model():
         
     except Exception as e:
         print(f"❌ Model testing failed: {e}")
+        return False
+        
+    return True
 
 if __name__ == "__main__":
+    print("🔧 Initializing Medical LLM Training Environment...")
+    
+    # Test imports first
+    try:
+        import torch
+        print(f"✅ PyTorch {torch.__version__} imported")
+        import transformers
+        print(f"✅ Transformers {transformers.__version__} imported")
+        import peft
+        print(f"✅ PEFT {peft.__version__} imported")
+        import trl
+        print(f"✅ TRL imported")
+    except Exception as e:
+        print(f"❌ Import error: {e}")
+        exit(1)
+    
     # Initialize wandb (optional)
     try:
         wandb.login()
@@ -256,14 +261,23 @@ if __name__ == "__main__":
         print("⚠️  Weights & Biases not configured (optional)")
     
     # Run training
-    main()
+    success = main()
     
-    # Test the model
-    test_model()
-    
-    print("\n🎉 All done! Check ./medical-llm-final for your fine-tuned model")
-    print("📖 Next steps:")
-    print("   1. Evaluate on medical benchmarks (MedQA, MedMCQA)")
-    print("   2. Test with different hyperparameters")
-    print("   3. Scale up with larger datasets")
-    print("   4. Compare with baseline models") 
+    if success:
+        # Test the model
+        test_model()
+        
+        print("\n🎉 All done! Check ./medical-llm-final for your fine-tuned model")
+        print("📖 Next steps:")
+        print("   1. Load real medical datasets (lavita/medical-qa-datasets)")
+        print("   2. Evaluate on medical benchmarks (MedQA, MedMCQA)")
+        print("   3. Test with different hyperparameters")
+        print("   4. Scale up with larger models")
+        print("   5. Compare with baseline models")
+    else:
+        print("\n❌ Training failed. Please check the error messages above.")
+        print("💡 Common solutions:")
+        print("   1. Reduce batch size in setup_training_args()")
+        print("   2. Reduce max_seq_length in the trainer")
+        print("   3. Enable gradient_checkpointing")
+        print("   4. Try a smaller model") 

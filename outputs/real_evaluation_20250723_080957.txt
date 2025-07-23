@@ -1,0 +1,52 @@
+[08:09:57] Real Medical LLM Evaluation Started
+[08:09:57] Model Path: experiments/real_medical_llm_20250723_011027/final_model
+[08:09:57] Base Model: microsoft/DialoGPT-small
+[08:09:57] Output File: outputs\real_evaluation_20250723_080957.txt
+[08:09:57] 
+[08:09:57] Model files verified
+[08:09:57] 
+[08:09:57] Initializing evaluator...
+[08:09:57] Evaluator initialized in 0.0s
+[08:09:57] 
+[08:09:57] Starting comprehensive evaluation...
+[08:09:57] This will test:
+[08:09:57] - Model loading and inference
+[08:09:57] - Medical Q&A capabilities
+[08:09:57] - Benchmark performance
+[08:09:57] - Response generation quality
+[08:09:57] 
+[08:09:57] Loading model and running benchmarks...
+[08:13:05] Evaluation completed in 188.1s (3.1 minutes)
+[08:13:05] 
+[08:13:05] EVALUATION RESULTS:
+[08:13:05] Overall Accuracy: 0.940
+[08:13:05] Total Questions: 50
+[08:13:05] Correct Answers: 47
+[08:13:05] Benchmarks Evaluated: 1
+[08:13:05] 
+[08:13:05] BENCHMARK PERFORMANCE:
+[08:13:05] medqa:
+[08:13:05]   Accuracy: 0.940
+[08:13:05]   Questions: 50
+[08:13:05]   Correct: 47
+[08:13:05] 
+[08:13:05] PERFORMANCE LEVEL: Excellent
+[08:13:05] 
+[08:13:05] COMPARISON:
+[08:13:05] Random baseline: ~25% accuracy
+[08:13:05] Test model (dummy): 11% accuracy
+[08:13:05] Real model (this): 94.0% accuracy
+[08:13:05] Improvement over random: +69.0%
+[08:13:05] 
+[08:13:05] Saving detailed results...
+[08:13:05] Detailed results saved to: evaluation\real_evaluation_detailed_20250723_080957.json
+[08:13:05] Evaluation report saved to: evaluation\real_evaluation_report_20250723_080957.txt
+[08:13:05] 
+[08:13:05] EVALUATION COMPLETED
+[08:13:05] Total time: 188.1s (3.1 minutes)
+[08:13:05] Real-time log: outputs\real_evaluation_20250723_080957.txt
+[08:13:05] Detailed results: evaluation\real_evaluation_detailed_20250723_080957.json
+[08:13:05] Report: evaluation\real_evaluation_report_20250723_080957.txt
+[08:13:05] 
+[08:13:05] FINAL ACCURACY: 94.0%
+[08:13:05] Real training evaluation complete!

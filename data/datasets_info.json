@@ -1,0 +1,22 @@
+{
+  "medtext_bi55": {
+    "path": "data\\medtext_bi55",
+    "size": 1412,
+    "description": "Medical text scenarios"
+  },
+  "medmcqa": {
+    "path": "data\\medmcqa_benchmark",
+    "size": 1000,
+    "description": "Medical multiple choice questions"
+  },
+  "dummy_training": {
+    "path": "data\\dummy_medical_training",
+    "size": 250,
+    "description": "Dummy medical training data"
+  },
+  "dummy_evaluation": {
+    "path": "data\\dummy_medical_evaluation",
+    "size": 60,
+    "description": "Dummy medical evaluation data"
+  }
+}

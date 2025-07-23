@@ -1,0 +1,428 @@
+{
+  "model_info": {
+    "model_name": "microsoft/DialoGPT-small",
+    "model_path": "experiments/real_medical_llm_20250723_011027/final_model",
+    "evaluation_timestamp": "2025-07-23T08:10:01.493905"
+  },
+  "benchmark_results": {
+    "medqa": {
+      "dataset_name": "medqa",
+      "total_questions": 50,
+      "correct_answers": 47,
+      "accuracy": 0.94,
+      "detailed_results": [
+        {
+          "question_id": 0,
+          "question": "Which of the following is not true for myelinated nerve fibers:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The following is true for myelinated nerve fibers:"
+        },
+        {
+          "question_id": 1,
+          "question": "Which of the following is not true about glomerular capillaries')",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The following is not true about glomerular capillaries. The normal amount of blood can be done by using a small amount of blood vessels. The normal amount of blood can be done by using a small amount ..."
+        },
+        {
+          "question_id": 2,
+          "question": "A 29 yrs old woman with a pregnancy of 17 week has a 10 years old boy with down syndrome. She does not want another down syndrome kid; best advice to her is",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Drain the water and don't get another water. If the baby is still in water then it is safe to give him water to wash it out. When the water runs out the water will be purified and you will have a less..."
+        },
+        {
+          "question_id": 3,
+          "question": "Axonal transport is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Dental pain is a common symptom of acute onset of acute onset of acute onset of acute onset of acute onset of acute onset of acute onset of acute onset of acute onset of acute onset of acute onset of ..."
+        },
+        {
+          "question_id": 4,
+          "question": "Low insulin to glucagon ratio is seen in all of these except:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Low insulin to glucagon ratio is seen in all of these:"
+        },
+        {
+          "question_id": 5,
+          "question": "Concentration of tropicamide:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Cucranium(3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3)) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3) (3)) (..."
+        },
+        {
+          "question_id": 6,
+          "question": "Which of the following statements is true regarding H I N1 Influenza?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "H I N1 Influenza is a common infection that is not treated with antibiotics. It is a disease that causes the body to lose blood and tissues, which is more important than any other type of infection. T..."
+        },
+        {
+          "question_id": 7,
+          "question": "Which of the following are not a branch of external carotid Aery in Kiesselbach's plexus.",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "External carotid Aery in Kiesselbach's plexus."
+        },
+        {
+          "question_id": 8,
+          "question": "Diagnosis of the following ECG-",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Echoral hypertension and hypertensive hypertension are two different diseases that are very common and can cause an abnormal number of symptoms that can be treated by using a cream or a steroid. The o..."
+        },
+        {
+          "question_id": 9,
+          "question": "A blue new born presents with cyanosis. The X\u2013ray chest reveal oligaemic lung field and normal sized heart. Most likely diagnosis is \u2013",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Blue new born presents with cyanosis. The X\u2013ray chest reveal oligaemic lung field and normal sized heart.\n\nAn x\u2013ray chest reveal oligaemic lung field and normal sized heart."
+        },
+        {
+          "question_id": 10,
+          "question": "27.\tThe lateral spread of dental caries is facilitated mostly  by the",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The lateral spread of dental caries is facilitated mostly by the the Larynx and Lagus. The Larynx and Lagus are the most common oral cavity in the posterior part of the body. The Larynx and Lagus are ..."
+        },
+        {
+          "question_id": 11,
+          "question": "A second-year PG resident tells you to perform an ABG of a patient. All of the following are true about performing an ABG except:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "This is true about performing an ABG of a patient. The first-year PG resident tells you to perform an ABG of a patient. The second-year PG resident tells you to perform an ABG of a patient. All of the..."
+        },
+        {
+          "question_id": 12,
+          "question": "Respiratory rhythm generation center is located at:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The heart rate from the heart is located at the top of the spine of the spine of the spine. The heart is located at the top of the spine of the spine. The heart is located at the top of the spine. The..."
+        },
+        {
+          "question_id": 13,
+          "question": "Gait apraxia is seen in thromboembolic episode involving:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Gait apraxia is seen in thromboembolic episode involving:"
+        },
+        {
+          "question_id": 14,
+          "question": "Heavy forces on periodontal ligament causes:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Heavy forces on periodontal ligament causes:"
+        },
+        {
+          "question_id": 15,
+          "question": "About N. gonorrhoea, all are true except",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "This is a true story. N. gonorrhoea is a common symptom of a very serious disease in the Philippines, and is a common symptom of severe depression. It is a condition that is associated with a lot of s..."
+        },
+        {
+          "question_id": 16,
+          "question": "A patient who was on ventilator and being ventilated for past few days, suddenly pulls out the endotracheal tube. What is the next step of management?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Patients who are on ventilator and being ventilated for past few days, gradually get out the ventilator tube. The ventilator tube is an obstruction in the ventilator. The obstruction is located in the..."
+        },
+        {
+          "question_id": 17,
+          "question": "In a\t6-month-old child, thick curd like white\tpatch\nappears on the buccal mucosa. On rubbing it leaves an\nerythematous patch. Most likely diagnosis is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "In a na\u00efve 6-month-old child, thick curd like white \u225d 1% (1%) [4%) [2%) [5%) [4%] [5%] [5%] [5%] [6%] [6%] [7%] [6% (6%) [7%] [8%) [9% (7%) [10%) [11%] [11%) [12% [11%) [14%%) [12% [14%%) [15%) [16%) ..."
+        },
+        {
+          "question_id": 18,
+          "question": "Characteristic of venous blood flow of lower limb in duplex Doppler is?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Characteristic of venous blood flow of lower limb in Duplex Doppler is."
+        },
+        {
+          "question_id": 19,
+          "question": "The source of calcium ions of a calcific bridge in a\ntooth in which calcium hydroxide pulpotomy has been\nperformed is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The source of calcium ions of a calcific bridge in a calcific bridge in a calcific bridge in a calcific bridge is:"
+        },
+        {
+          "question_id": 20,
+          "question": "2, 3-BPG binds to sites of haemoglobin and the affinity for oxygen",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "2, 3-BPG binds to sites of haemoglobin and the affinity for oxygen.\nThe second BPG is a receptor that binds to sites of haemoglobin and the affinity for oxygen.\nBPG is a receptor that binds to sites o..."
+        },
+        {
+          "question_id": 21,
+          "question": "Highest concentration of oxygen is delivered through?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The highest concentration of oxygen is delivered through the lungs.\n\nThe highest concentration of oxygen is delivered through the lungs.\nThe highest concentration of oxygen is delivered through the lu..."
+        },
+        {
+          "question_id": 22,
+          "question": "Sharpest cusp is seen in",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Sharpest cusp is seen in\n\n\nThe most common cause of sharp cusp is an incision of the skull. It is associated with a variety of conditions.\n\nThe most common cause of sharp cusp is an incision of the sk..."
+        },
+        {
+          "question_id": 23,
+          "question": "A mother is Hbs Ag positive and anti Hbe Ag positive. Risk of transmission of Hep. B in child is:",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "Hbs Ag positive and anti Hbe ag positive are not mutually exclusive and therefore the risk of transmission of Hep. B in child is: 1. Immunodeficiency of Hbs Ag positive and anti Hb positive 1. Immunod..."
+        },
+        {
+          "question_id": 24,
+          "question": "In a patient with competent lips together at rest, the lip\nline is opposite the tips of the upper incisors. The lip line is then described as",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "In a patient with competent lips together at rest, the lip line is opposite the tips of the upper incisors. The lip line is described as the lips in the lower incisors."
+        },
+        {
+          "question_id": 25,
+          "question": "A patient presented to emergency with overdose some drug. There were increased salivation and increased bronchial secretions. On examination, blood pressure was 88/60 mmHg. RBC esterase level is 50. What should be the treatment of this person?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Possible acute hepatoxic poisoning (Toxypol-1, or other hepatoxic drugs, could be due to a liver function deficiency (Poxypol-1, or other hepatoxic drugs, could be due to a liver function deficiency, ..."
+        },
+        {
+          "question_id": 26,
+          "question": "The current bar clasp design used is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "This is the current bar clasp design used in the US Army Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry Infantry..."
+        },
+        {
+          "question_id": 27,
+          "question": "All of the following are true regarding Class-II inlay gingival margins preparation except?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "All of the following are true regarding Class-II inlay gingival margins preparation except:"
+        },
+        {
+          "question_id": 28,
+          "question": "Breakdown of periodontal fibres in periodontitis is due to bacterial enzyme: (OR) Which of the following bacterial products have been implicated in initiation of inflammatory periodontal disease?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A periodontal fibres in periodontal fibres is a type of bacterial infection that occurs due to the bacteria enzyme, which is responsible for initiation of inflammatory periodontal disease. The enzymes..."
+        },
+        {
+          "question_id": 29,
+          "question": "In a study, two groups of newborns are checked for their weights based on whether their mothers received food supplements or not. The appropriate test which can be used for comparing the data is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The appropriate test is a blood test that is used to determine whether a child is an infant or a female infant, as a basis for assessing the viability of the mother's diet and breastfeeding characteri..."
+        },
+        {
+          "question_id": 30,
+          "question": "Which vitamin is required for glycogen Phosphorylase?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Citric acid is required for glycogen phosphorylase.\nCitric acid is required for glycogen phosphorylase. It is a phosphorylase that is in the body to activate the glycogen in the blood. This process is..."
+        },
+        {
+          "question_id": 31,
+          "question": "A child's behaviour is traced to have dental difficulties\nfrom\this\tmother.\tThe\tmost\tsatisfactory\tmethod\tof\nhandling the situation is to:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The-\"), ()\")\\-)\"\\\\\\'\\\\\\-\\\\\\\\-\\\\\\\\-\\\\\\\\\\\\-\\\\\\\\-\\\\\\\\-\\\\\\\\\\\\)\\\\\\-\\\\\\\\\\\\\\\\\\-\\\\\\><\\\\\\\\><\\\\\\\\ \\\\\\\\\\\\\\\\\\><\\\\\\\\\\><\\\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\\\><\\..."
+        },
+        {
+          "question_id": 32,
+          "question": "Which of the following is the only complete cailage ring in the respiratory tree?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The only complete cailage ring in the respiratory tree is the one that is located in the heart. It is a complete cailage ring. The heart is located in the central ventricles. The heart can be located ..."
+        },
+        {
+          "question_id": 33,
+          "question": "Steps of intubation - arrange in sequence:- a. Head extension and flexion of neck b. Introduction of laryngoscope c. Inflation of cuff d. Check breath sounds with stethoscope e. fixation of the tube to prevent dislodgement",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "Direction of diaphragmia d. A. Laryngoscope C. Head extension and flexion of neck b. Introduction of laryngoscope c. Inflation of cuff d. Check breath sounds with stethoscope e. fixation of the tube t..."
+        },
+        {
+          "question_id": 34,
+          "question": "In Erythroblastosis fetalis not involved is \u2013",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Erythroblastosis fetalis is not involved in the treatment of Erythroblastosis Fetalis. It is an autoimmune disease that involves a variety of conditions that can cause a variety of symptoms including ..."
+        },
+        {
+          "question_id": 35,
+          "question": "A dentist suffered from Hepatitis B infection 3 months back. His laboratory tests are normal, but he is not allowed by the medical board to do surgical practice. He is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The results of a blood test can be useful in determining whether the blood test is good."
+        },
+        {
+          "question_id": 36,
+          "question": "A pediatrician in a district hospital with specialization neonatal care unit calls an ophthalmologist for consultation for which of the following?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The following is a pediatrician in a district hospital with specialization neonatal care unit calls an ophthalmologist for which of the following:\nThe following is a pediatrician in a district hospita..."
+        },
+        {
+          "question_id": 37,
+          "question": "In a child with active liver failure, the most important prognosis factor for death is \u2013",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The most important prognosis factor for death is > > > > > > > > > > >> > > >>> >> >> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>..."
+        },
+        {
+          "question_id": 38,
+          "question": "A patient went into shock immediately after normal delivery, likely cause:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A patient went into shock immediately after normal delivery, likely cause:\n\nA patient went into shock immediately after normal delivery, likely cause:"
+        },
+        {
+          "question_id": 39,
+          "question": "A patient presented with flat topped violaceous papules, thinning of nails and onycholysis. What is the microscopic finding observed in this patient?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The microscopic finding observed in this patient is the presence of a small amount of sediment in the surface of the cell that is forming the contact, indicating that it is a sediment layer, which is ..."
+        },
+        {
+          "question_id": 40,
+          "question": "Which of the following is not. true regarding myelopathy?",
+          "correct_answer": "A",
+          "predicted_answer": "Unknown",
+          "is_correct": false,
+          "response": "The following is true:\n\nThe following is not true:\n\nThe following is not true:\n\nThe following is not true:\nThe following is not true:\nThe following is not true:\n\nThe following is not true:\nThe followi..."
+        },
+        {
+          "question_id": 41,
+          "question": "Which of the following committees has recommended a 3-year bachelor degree in medical education for rural health service?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "This is the third committee that has recommended a 3-year bachelor degree in medical education for rural health service.\nThe first two committees have recommended a 3-year bachelor degree in medical e..."
+        },
+        {
+          "question_id": 42,
+          "question": "Sequential arrangement of fetal scans -",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Fatal arrangement of fetal scans - 1) fetal scans - 1) fetal scans - 2) fetal scans - 3) fetal scans - 4) fetal scans - 5) fetal scans - 6) fetal scans - 6) fetal scans - 8) fetal scans - 9) fetal sca..."
+        },
+        {
+          "question_id": 43,
+          "question": "Which one of the following is a muscle splitting incision?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The following is a muscle splitting incision. It involves the muscle that is separating from the bone to the bone. The muscles that are splitting are called'the bone'and the bone is called the'biceps'..."
+        },
+        {
+          "question_id": 44,
+          "question": "Multiple canals in mandibular premolars are seen in?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Multiple canals in mandibular premolars are seen in? Multiple canals in mandibular premolars are seen in? Several canals in mandibular premolars are seen in the same place as others. This is a common ..."
+        },
+        {
+          "question_id": 45,
+          "question": "Which of the following blade angle is appropriate for scaling and root planing",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The appropriate blade angle for scaling and root planing is: 1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1..."
+        },
+        {
+          "question_id": 46,
+          "question": "Which pa of brachial plexus do not give branches",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Possibly a plexus of the brachial plexus may give branches."
+        },
+        {
+          "question_id": 47,
+          "question": "If the Rb gene phosphorylation is defective, which of the following will happen?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Rb gene phosphorylation is defective. The Rb gene phosphorylation is defective. The Rb gene phosphorylation is defective. The Rb gene phosphorylation is defective. The Rb gene phosphorylation is defec..."
+        },
+        {
+          "question_id": 48,
+          "question": "Cumulative index is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Compositional index is: a type of index that can be measured by a number of different factors that determine the amount of the index that can be measured.\n\nThe best example of a composite index is the..."
+        },
+        {
+          "question_id": 49,
+          "question": "The cells which will proliferate from top to bottom of villi are:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The cells that will proliferate from top to bottom of villi are called the cella. They are the cells that will proliferate from top to bottom of villi, and can be treated with either a combination of ..."
+        }
+      ],
+      "timestamp": "2025-07-23T08:13:05.186298"
+    }
+  },
+  "summary": {
+    "overall_accuracy": 0.94,
+    "total_questions": 50,
+    "total_correct": 47,
+    "benchmarks_evaluated": 1,
+    "memory_usage": {
+      "gpu_memory_allocated_gb": 0.5020384788513184,
+      "gpu_memory_reserved_gb": 0.8125
+    }
+  }
+}

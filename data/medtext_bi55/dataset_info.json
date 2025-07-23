@@ -1,0 +1,42 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "med_text",
+  "dataset_size": 943488,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/BI55/MedText@96d57f97ae609ff352aa97609a8d612db2d1c0f1/medtext_2.csv": {
+      "num_bytes": 939946,
+      "checksum": null
+    }
+  },
+  "download_size": 939946,
+  "features": {
+    "Prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Completion": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1883434,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 943488,
+      "num_examples": 1412,
+      "dataset_name": "med_text"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}
