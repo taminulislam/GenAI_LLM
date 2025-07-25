@@ -1,0 +1,13 @@
+{
+  "train_loss": 2.4504669249490734,
+  "train_steps": 1239,
+  "epochs_trained": 3,
+  "output_dir": "..\\experiments\\comprehensive_gpt2_20250725_123312",
+  "final_model_path": "..\\experiments\\comprehensive_gpt2_20250725_123312\\final_model",
+  "dataset_size": 6600,
+  "model_name": "gpt2",
+  "train_runtime": 877.0179,
+  "train_samples_per_second": 22.577,
+  "train_steps_per_second": 1.413,
+  "total_flos": 1073770194419712.0
+}

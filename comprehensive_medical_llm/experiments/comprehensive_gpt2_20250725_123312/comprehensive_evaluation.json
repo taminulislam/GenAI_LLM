@@ -1,0 +1,9 @@
+{
+  "accuracy": 0.0,
+  "bleu_score": 0.061914816234810564,
+  "rouge_l": 0.053163512651985725,
+  "hallucination_score": 0.0,
+  "factual_consistency": 0.061914816234810564,
+  "total_samples": 100,
+  "exact_matches": 0
+}

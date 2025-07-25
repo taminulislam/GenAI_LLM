@@ -1,0 +1,13 @@
+{
+  "train_loss": 3.0562508192824396,
+  "train_steps": 2065,
+  "epochs_trained": 5,
+  "output_dir": "..\\experiments\\comprehensive_dialogpt_small_20250723_170324",
+  "final_model_path": "..\\experiments\\comprehensive_dialogpt_small_20250723_170324\\final_model",
+  "dataset_size": 6600,
+  "model_name": "microsoft/DialoGPT-small",
+  "train_runtime": 1311.9149,
+  "train_samples_per_second": 25.154,
+  "train_steps_per_second": 1.574,
+  "total_flos": 1789035969540096.0
+}
