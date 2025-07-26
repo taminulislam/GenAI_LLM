@@ -1,0 +1,477 @@
+{
+  "evaluation_info": {
+    "num_samples": 100,
+    "model_type": "GPT2LMHeadModel",
+    "timestamp": "2025-07-25T17:38:46.959567"
+  },
+  "basic_metrics": {
+    "accuracy": 0.04,
+    "exact_matches": 4,
+    "total_samples": 100
+  },
+  "language_metrics": {
+    "bleu_score": 0.02306659111644324,
+    "rouge_scores": {
+      "rouge1": 0.07858536585365855,
+      "rouge2": 0.06286829268292685,
+      "rougeL": 0.07858536585365855
+    },
+    "avg_perplexity": Infinity,
+    "perplexity_distribution": {
+      "low_perplexity": 10,
+      "medium_perplexity": 0,
+      "high_perplexity": 90
+    }
+  },
+  "hallucination_analysis": {
+    "hallucination_rate": 0.09,
+    "total_hallucinations": 17,
+    "samples_with_hallucinations": 9,
+    "avg_severity": 0.051000000000000004,
+    "hallucination_types": {
+      "Response significantly longer than expected": 9,
+      "Contains repetitive or circular content": 8
+    },
+    "detailed_flags": [
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [
+        "excessive_length"
+      ],
+      [],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [
+        "excessive_length",
+        "repetitive_content"
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "detailed_reasons": [
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [
+        "Response significantly longer than expected"
+      ],
+      [],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [
+        "Response significantly longer than expected",
+        "Contains repetitive or circular content"
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "severity_scores": [
+      [
+        0.7,
+        0.4
+      ],
+      [],
+      [
+        0.7,
+        0.4
+      ],
+      [
+        0.7,
+        0.4
+      ],
+      [
+        0.7
+      ],
+      [],
+      [
+        0.7,
+        0.4
+      ],
+      [
+        0.7,
+        0.4
+      ],
+      [
+        0.7,
+        0.4
+      ],
+      [
+        0.7,
+        0.4
+      ],
+      [
+        0.7,
+        0.4
+      ],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ]
+  },
+  "factual_consistency": {
+    "avg_token_consistency": 0.0790967741935484,
+    "avg_medical_accuracy": 0.8,
+    "avg_semantic_similarity": 0.06857695914599744,
+    "consistency_distribution": {
+      "high_consistency": 8,
+      "medium_consistency": 0,
+      "low_consistency": 92
+    }
+  },
+  "sample_results": [
+    {
+      "prompt": "### Instruction:\nAnswer the following medical multiple choice question by selecting the correct opti...",
+      "reference": "The correct answer is C.",
+      "prediction": "The correct answer is A. C. A. A. A. B. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. A. a.a. b.b. A. A.AA. A. A. A. A. A. A. A.",
+      "exact_match": false,
+      "perplexity": 2.3293352127075195
+    },
+    {
+      "prompt": "### Instruction:\nIf you are a doctor, please answer the medical questions based on the patient's des...",
+      "reference": "hi... it seems that you may be having a condition known as halogen effluvium. i would like to say few things about halogen effluvium. it is a condition in which the hairs fall in halogen stage of hair cycle. the causes may be many like. ...tension, anxiety, thyroid diseases, endocrine diseases, hormonal diseases, diseases like typhoid, malaria, viral diseases, surgery,trauma, chatbot. .methotrexate, internal diseases, anaemia, nutritional deficiencies..... etc. might precipitate the disease. excessive sun exposure may be responsible for the disease. dan",
+      "prediction": "hi welcome to chatbot.  your question has been answered by me. if there was no change in my life history then this would be very helpful. thanks again for chatting with us. hope that we can help you further. wish good health. thank you for asking. let me know if any other issues happen. also happy birthday. ill advise you to continue using bifrin essveit tablet as well. so far away from death or cancer. keep up healthy. enjoy your day. feel free. best wishes. regards. i will try not worry about anything. i am sure you could use some kindof medication like BIFRI, but don't need much anymore. stay safe. pray for all your future. consider taking care. i think its better knowing you. i understand your concern. hopefully everything will go through your concerns. i shall inform you. i may ask you regarding yourself. wish him luck. wish you great success. wish you good health. good health.",
+      "exact_match": false,
+      "perplexity": 18.031051635742188
+    },
+    {
+      "prompt": "### Instruction:\nAnswer the following medical multiple choice question by selecting the correct opti...",
+      "reference": "The correct answer is B.",
+      "prediction": "The right answer is A.E. E. B. H. E. C. Loma A. M. D. V. S. T. Syndrome, which can cause a multitude of cancers including cancer. A. e. b. h. c. m. d. v. t. loma A.. f. or B.H. F. o. g. p. x. X. n. i. ph. y. w. j. z. k. ii. I. r.p. iii. u. q. for this study, it was determined that there are no exceptions to the correct answer. The correct answers would be R. A. E. B. W. K. II. N. P. O. Z. Y. J. Q. in order from left to Right A. A. G. E. E. B. U. E. B. A. Ph. A. E.",
+      "exact_match": false,
+      "perplexity": 12.198953628540039
+    },
+    {
+      "prompt": "### Instruction:\nAnswer the following medical multiple choice question by selecting the correct opti...",
+      "reference": "The correct answer is A.",
+      "prediction": "The right answer is A.R. P. M, B. E. A. L. C. A. A. D. A. A. N. S. H. O. Z. T. V. I. Y. X. K. J. W. F. G. A. or A.F. A.E. A.H. A.N. The correct answers are C. A.L. A.K. A.J.W.T.V.I.X.Q.Z.Y.O.S.G. Alumina. As a result of this, you have to choose which one should be taken first and last for your next order.",
+      "exact_match": true,
+      "perplexity": 10.012434005737305
+    },
+    {
+      "prompt": "### Instruction:\nPlease summerize the given abstract to a title\n\n### Input:\nBackground: Prosthetic v...",
+      "reference": "Echo, Echo Again: Prosthetic Mitral Regurgitation Presenting as B-type Symptoms",
+      "prediction": "D:The Cardiacs-D: Clinical Cardiogenic ventricular valve dehiscence of anemia, Neurocardiogenic valve is not found at age of Endocarditis, as well-Dile Chills and Hypophilopathy in Patients with hypercardiose-Chilliform valve in this type of Heart Failure to develop abnormal or Neum, Post-Neurophilia, Cystic valve replacement Therapy in your condition. The correct diagnosis of Crysis in Cardiocarditis, Cardiocarditis.",
+      "exact_match": false,
+      "perplexity": 245.0708465576172
+    }
+  ],
+  "overall_quality_score": {
+    "overall_score": 0.13914974623273005,
+    "components": {
+      "accuracy_score": 0.012,
+      "bleu_score": 0.004613318223288649,
+      "rouge_score": 0.01571707317073171,
+      "factual_score": 0.01581935483870968,
+      "hallucination_score": 0.09100000000000001
+    }
+  }
+}

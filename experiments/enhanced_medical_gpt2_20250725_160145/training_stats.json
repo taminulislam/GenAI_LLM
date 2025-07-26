@@ -1,0 +1,13 @@
+{
+  "train_loss": 0.25056356712268174,
+  "train_steps": 1806,
+  "epochs_trained": 2,
+  "output_dir": "..\\experiments\\enhanced_medical_gpt2_20250725_160145",
+  "final_model_path": "..\\experiments\\enhanced_medical_gpt2_20250725_160145\\final_model",
+  "dataset_size": 7218,
+  "model_name": "gpt2",
+  "train_runtime": 1086.604,
+  "train_samples_per_second": 13.285,
+  "train_steps_per_second": 1.662,
+  "total_flos": 763710658652160.0
+}

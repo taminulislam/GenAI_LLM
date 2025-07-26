@@ -37,7 +37,7 @@ class EnhancedMedicalDataLoader:
         # Dataset 1: MedMCQA (Medical Multiple Choice QA)
         try:
             logger.info("Loading MedMCQA dataset...")
-            medmcqa = load_dataset("medmcqa", split="train[:8000]")
+            medmcqa = load_dataset("medmcqa", split="train[:3000]")  # Reduced for better balance
             self.datasets['medmcqa'] = medmcqa
             logger.info(f"✅ MedMCQA loaded: {len(medmcqa)} samples")
         except Exception as e:
@@ -47,12 +47,13 @@ class EnhancedMedicalDataLoader:
         # Dataset 2: Medical QA from lavita (similar domain)
         try:
             logger.info("Loading Medical QA dataset...")
-            medical_qa = load_dataset("lavita/medical-qa-datasets", split="train[:2000]")
+            medical_qa = load_dataset("lavita/medical-qa-datasets", "all-processed", split="train[:2000]")
             self.datasets['medical_qa'] = medical_qa
             logger.info(f"✅ Medical QA loaded: {len(medical_qa)} samples")
         except Exception as e:
             logger.warning(f"⚠️ Could not load Medical QA: {e}")
-            self.datasets['medical_qa'] = self._create_dummy_qa_dataset()
+            # Create larger dummy dataset for better balance
+            self.datasets['medical_qa'] = self._create_large_dummy_qa_dataset()
         
         logger.info(f"Successfully loaded {len(self.datasets)} datasets")
         return self.datasets
@@ -106,6 +107,63 @@ class EnhancedMedicalDataLoader:
                 "Migraines can be triggered by stress, certain foods, hormonal changes, or environmental factors.",
                 "Heart attack symptoms include chest pressure, arm pain, nausea, and sweating. Call emergency services."
             ] * 4
+        }
+        return Dataset.from_dict(dummy_qa)
+    
+    def _create_large_dummy_qa_dataset(self) -> Dataset:
+        """Create larger dummy QA dataset for better balance"""
+        medical_questions = [
+            "What are the symptoms of pneumonia?",
+            "How to manage chronic pain?",
+            "Patient has chest pain and shortness of breath.",
+            "What causes migraine headaches?",
+            "Explain heart attack symptoms.",
+            "What is Type 2 diabetes?",
+            "How to prevent stroke?",
+            "What causes asthma?",
+            "Explain the symptoms of depression.",
+            "What is the treatment for anxiety?",
+            "How to manage high cholesterol?",
+            "What are the signs of dehydration?",
+            "Explain the causes of insomnia.",
+            "What is hypertension?",
+            "How to treat bacterial infections?",
+            "What are the symptoms of liver disease?",
+            "How to manage arthritis pain?",
+            "What causes kidney stones?",
+            "Explain thyroid disorders.",
+            "What is the treatment for allergies?",
+        ]
+        
+        medical_answers = [
+            "Pneumonia symptoms include persistent cough, fever, chills, shortness of breath, and chest pain.",
+            "Chronic pain management includes medications, physical therapy, lifestyle changes, and psychological support.",
+            "Chest pain with shortness of breath may indicate heart problems. Seek immediate medical attention.",
+            "Migraines can be triggered by stress, certain foods, hormonal changes, or environmental factors.",
+            "Heart attack symptoms include chest pressure, arm pain, nausea, and sweating. Call emergency services.",
+            "Type 2 diabetes is a chronic condition where the body becomes resistant to insulin.",
+            "Stroke prevention includes controlling blood pressure, managing cholesterol, and staying active.",
+            "Asthma is caused by inflammation and narrowing of airways, often triggered by allergens.",
+            "Depression symptoms include persistent sadness, loss of interest, fatigue, and sleep disturbances.",
+            "Anxiety treatment may include therapy, medications, lifestyle changes, and stress management.",
+            "High cholesterol management includes dietary changes, regular exercise, and possibly medications.",
+            "Dehydration signs include thirst, dry mouth, decreased urination, and fatigue.",
+            "Insomnia causes include stress, anxiety, poor sleep habits, and medical conditions.",
+            "Hypertension is high blood pressure that can damage arteries and organs over time.",
+            "Bacterial infections are treated with appropriate antibiotics based on the specific bacteria.",
+            "Liver disease symptoms include jaundice, abdominal pain, swelling, and fatigue.",
+            "Arthritis pain management includes medications, exercise, heat/cold therapy, and lifestyle changes.",
+            "Kidney stones form from minerals and salts that crystallize in concentrated urine.",
+            "Thyroid disorders affect metabolism and can cause weight changes, fatigue, and mood issues.",
+            "Allergy treatment includes antihistamines, avoiding triggers, and sometimes immunotherapy.",
+        ]
+        
+        # Repeat patterns to create more samples
+        repetitions = 100  # Creates 2000 samples
+        dummy_qa = {
+            "instruction": ["Answer the following medical question."] * (len(medical_questions) * repetitions),
+            "input": medical_questions * repetitions,
+            "output": medical_answers * repetitions
         }
         return Dataset.from_dict(dummy_qa)
     

@@ -1,0 +1,13 @@
+{
+  "train_loss": 4.084782663924656,
+  "train_steps": 1126,
+  "epochs_trained": 2,
+  "output_dir": "..\\experiments\\enhanced_medical_microsoft_DialoGPT_small_20250725_172108",
+  "final_model_path": "..\\experiments\\enhanced_medical_microsoft_DialoGPT_small_20250725_172108\\final_model",
+  "dataset_size": 4500,
+  "model_name": "microsoft/DialoGPT-small",
+  "train_runtime": 679.2784,
+  "train_samples_per_second": 13.249,
+  "train_steps_per_second": 1.658,
+  "total_flos": 998182860742656.0
+}

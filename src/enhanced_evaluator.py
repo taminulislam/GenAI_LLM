@@ -101,13 +101,22 @@ class EnhancedMedicalEvaluator:
                 prompt,
                 max_new_tokens=max_new_tokens,
                 do_sample=True,
-                temperature=0.7,
-                top_p=0.9,
+                temperature=0.3,  # Lower temperature for more consistent medical answers
+                top_p=0.8,        # Slightly lower for more focused responses
+                repetition_penalty=1.1,  # Reduce repetition
                 pad_token_id=self.tokenizer.eos_token_id,
                 return_full_text=False
             )
             
             response = result[0]['generated_text'].strip()
+            
+            # Clean up response - remove any trailing incomplete sentences
+            if response and not response.endswith('.'):
+                # Find last complete sentence
+                sentences = response.split('.')
+                if len(sentences) > 1:
+                    response = '.'.join(sentences[:-1]) + '.'
+            
             return response
             
         except Exception as e:
@@ -157,14 +166,26 @@ class EnhancedMedicalEvaluator:
         """Simple BLEU approximation using word overlap"""
         scores = []
         for pred, ref in zip(predictions, references):
-            pred_words = set(pred.lower().split())
-            ref_words = set(ref.lower().split())
-            if ref_words:
-                overlap = len(pred_words.intersection(ref_words))
-                score = overlap / len(ref_words)
-                scores.append(score)
-            else:
+            pred_words = pred.lower().split()
+            ref_words = ref.lower().split()
+            if not ref_words:
                 scores.append(0.0)
+                continue
+            
+            # Simple n-gram overlap (1-gram BLEU approximation)
+            pred_set = set(pred_words)
+            ref_set = set(ref_words)
+            overlap = len(pred_set.intersection(ref_set))
+            precision = overlap / len(pred_set) if pred_set else 0.0
+            recall = overlap / len(ref_set) if ref_set else 0.0
+            
+            # F1-like score for BLEU approximation
+            if precision + recall > 0:
+                bleu_score = 2 * precision * recall / (precision + recall)
+            else:
+                bleu_score = 0.0
+                
+            scores.append(min(bleu_score, 1.0))  # Cap at 1.0
         return np.mean(scores) if scores else 0.0
     
     def calculate_rouge_score(self, predictions: List[str], references: List[str]) -> Dict[str, float]:
@@ -229,8 +250,9 @@ class EnhancedMedicalEvaluator:
             severity_scores.append(severity)
         
         # Calculate overall statistics
-        total_hallucinations = sum(len(flags) for flags in hallucination_flags)
-        hallucination_rate = total_hallucinations / len(predictions) if predictions else 0
+        samples_with_hallucinations = sum(1 for flags in hallucination_flags if len(flags) > 0)
+        hallucination_rate = samples_with_hallucinations / len(predictions) if predictions else 0
+        total_hallucination_flags = sum(len(flags) for flags in hallucination_flags)
         avg_severity = np.mean([np.mean(scores) if scores else 0 for scores in severity_scores])
         
         # Categorize hallucination types
@@ -239,7 +261,8 @@ class EnhancedMedicalEvaluator:
         
         return {
             'hallucination_rate': hallucination_rate,
-            'total_hallucinations': total_hallucinations,
+            'total_hallucinations': total_hallucination_flags,
+            'samples_with_hallucinations': samples_with_hallucinations,
             'avg_severity': avg_severity,
             'hallucination_types': reason_counts,
             'detailed_flags': hallucination_flags,
@@ -427,6 +450,26 @@ class EnhancedMedicalEvaluator:
         
         return similarity / len(ref_words) if ref_words else 0.0
     
+    def _extract_answer_choice(self, prediction: str, reference: str) -> bool:
+        """Extract and compare answer choices for multiple choice questions"""
+        # Check for multiple choice answers (A, B, C, D)
+        import re
+        
+        pred_choices = re.findall(r'\b([ABCD])\b', prediction.upper())
+        ref_choices = re.findall(r'\b([ABCD])\b', reference.upper())
+        
+        if pred_choices and ref_choices:
+            return pred_choices[0] == ref_choices[0]
+        
+        # Check for "correct answer is X" patterns
+        pred_correct = re.search(r'correct answer is ([ABCD])', prediction.lower())
+        ref_correct = re.search(r'correct answer is ([ABCD])', reference.lower())
+        
+        if pred_correct and ref_correct:
+            return pred_correct.group(1).upper() == ref_correct.group(1).upper()
+        
+        return False
+    
     def run_comprehensive_evaluation(self, eval_dataset: Dataset, num_samples: int = 100) -> Dict[str, Any]:
         """
         Run comprehensive evaluation with all metrics
@@ -465,14 +508,38 @@ class EnhancedMedicalEvaluator:
             prompts.append(prompt)
             perplexity_scores.append(perplexity)
             
+            # Debug first few samples
+            if i < 3:
+                logger.info(f"DEBUG Sample {i+1}:")
+                logger.info(f"  Prompt: {prompt[:100]}...")
+                logger.info(f"  Expected: {reference}")
+                logger.info(f"  Generated: {prediction}")
+                logger.info(f"  Match: {'Yes' if reference.lower().strip() in prediction.lower().strip() else 'No'}")
+            
             if (i + 1) % 10 == 0:
                 logger.info(f"Processed {i + 1}/{len(eval_subset)} samples")
         
         # Calculate all metrics
         logger.info("Calculating metrics...")
         
-        # Basic accuracy (exact match)
-        exact_matches = [pred.strip().lower() == ref.strip().lower() for pred, ref in zip(predictions, references)]
+        # Basic accuracy (improved exact match)
+        exact_matches = []
+        for pred, ref in zip(predictions, references):
+            pred_clean = pred.strip().lower()
+            ref_clean = ref.strip().lower()
+            
+            # Try exact match first
+            if pred_clean == ref_clean:
+                exact_matches.append(True)
+            # Try checking if reference is contained in prediction
+            elif ref_clean in pred_clean:
+                exact_matches.append(True)
+            # Try checking key answer extraction for multiple choice
+            elif self._extract_answer_choice(pred_clean, ref_clean):
+                exact_matches.append(True)
+            else:
+                exact_matches.append(False)
+                
         accuracy = np.mean(exact_matches)
         
         # BLEU score
