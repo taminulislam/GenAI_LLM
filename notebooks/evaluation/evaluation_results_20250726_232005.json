@@ -1,0 +1,4396 @@
+{
+  "model_info": {
+    "model_name": "microsoft/DialoGPT-small",
+    "model_path": "..\\experiments\\notebook_training_20250726_121049\\final_model",
+    "evaluation_timestamp": "2025-07-26T23:02:20.108183"
+  },
+  "benchmark_results": {
+    "medqa": {
+      "dataset_name": "medqa",
+      "total_questions": 50,
+      "correct_answers": 16,
+      "accuracy": 0.32,
+      "factual_consistency_metrics": {
+        "average_consistency_score": 1.0,
+        "low_consistency_count": 0,
+        "consistency_percentage": 100.0
+      },
+      "hallucination_metrics": {
+        "average_hallucination_score": 0.07600000000000001,
+        "high_risk_count": 0,
+        "safety_percentage": 100.0
+      },
+      "detailed_results": [
+        {
+          "question_id": 0,
+          "question": "Which of the following is not true for myelinated nerve fibers:",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "The myelinated nerve fibers are not a reliable source of energy for myelinated fibers. They can be disrupted and disrupted by other stimuli, such as wind or air. The myelinated fibers can also be bloc...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 1,
+          "question": "Which of the following is not true about glomerular capillaries')",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Glomerular capillaries are not a condition of the fluid exiting the capillaries. It is a condition of the fluid exiting the capillaries. A. Lymphocytoma is a type of fluid that causes a decrease in fl...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "A 29 yrs old woman with a pregnancy of 17 week has a 10 years old boy with down syndrome. She does not want another down syndrome kid; best advice to her is",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) No test is required to rule out a possible cause of down syndrome, as it is a serious condition that occurs when a person is unable to develop a healthy immune system. A) No test is required for a ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "Axonal transport is:",
+          "correct_answer": "C",
+          "predicted_answer": "C",
+          "is_correct": true,
+          "response": "C) Antegradial transport is a type of cancer that is caused by the brain and spinal cord of the brain. A: Antegradial transport is a type of cancer that is caused by the brain and spinal cord of the b...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "Low insulin to glucagon ratio is seen in all of these except:",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "Low insulin to glucagon ratio is seen in all of these cases. The glycogen is found in all of the other tests, including the blood test and test, so it can be used to detect and control the levels of g...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "Concentration of tropicamide:",
+          "correct_answer": "A",
+          "predicted_answer": "Unknown",
+          "is_correct": false,
+          "response": "P.0.03, 0.02, 0.03, 0.03, 0.03, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.06, 0.05, 0.06, 0.06, 0.07, 0.08, 0.09, 0.09, 0.08, 0.08, 0.09, 0.11, 0.11, 0.09, 0.11, 0.08, 0.11, 0.08, 0.11, 0.11, 0.12, 0.11, ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "Which of the following statements is true regarding H I N1 Influenza?",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "A:Pregnant women with sore throat can be staed immediately on oseltamivir without diagnostic testing under category B. This is a type of risk for the developing immune system. B: There is no diagnosti...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "Which of the following are not a branch of external carotid Aery in Kiesselbach's plexus.",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) Sphenopalatine aery, aery, is a branch of external carotid Aery in kiesselbach's plexus. It is a natural muscle that is produced from the body of the animals. It is a muscle that is used to hold up...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "Diagnosis of the following ECG-",
+          "correct_answer": "B",
+          "predicted_answer": "C",
+          "is_correct": false,
+          "response": "Eclium bromatitis. C: Left ventricular failure. B: C: Left ventricular dysfunction. C: Left ventriculars. D: Left ventricular failure. C: Left ventricular failure. B: Left ventriculars. C: Left ventri...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "A blue new born presents with cyanosis. The X\u2013ray chest reveal oligaemic lung field and normal sized heart. Most likely diagnosis is \u2013",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "Ebstein's anomaly is the first time that there is a clear white white heart. This is a common symptom of a red heart in the heart, and it is a rare condition that occurs in the heart. It can lead to a...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "27.\tThe lateral spread of dental caries is facilitated mostly  by the",
+          "correct_answer": "B",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 11,
+          "question": "A second-year PG resident tells you to perform an ABG of a patient. All of the following are true about performing an ABG except:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A second-year PG resident tells you to perform an ABG of a patient. A: A: It is a patient that needs to undergo an ABG of a patient. B: It is a patient that needs to undergo an ABG of a patient. C:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 12,
+          "question": "Respiratory rhythm generation center is located at:",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) Respiratory rhythm generation center is located at the end of the middle of the left shoulder of the anterior part of the neck. It is located at the top of the anterior side of the neck. A) Dorsal ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 13,
+          "question": "Gait apraxia is seen in thromboembolic episode involving:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Gait apraxia is seen in thromboembolic episode involving:A: B: ACA A: B:A:A: ACA B:A: A: A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 14,
+          "question": "Heavy forces on periodontal ligament causes:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) hyalinization of periodontal ligament causes a sudden increase in tooth size. A) Hyalinization of periodontal ligament causes a decrease in tooth size. B) Osteoclastic activity around tooth is asso...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 15,
+          "question": "About N. gonorrhoea, all are true except",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "N. gonorrhoea is an autoimmune disease that affects the body's immune system, and can cause damage to the blood vessels in the blood vessels. A) Most common cause of urethritis in male is a blood clot...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 16,
+          "question": "A patient who was on ventilator and being ventilated for past few days, suddenly pulls out the endotracheal tube. What is the next step of management?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: Do not go for a hospital or a hospital. A: Sit in a warm room, take a bath, take a warm bath, take a breath, take a drink, and eat a lot of water. B: Do not go for a hospital or a hospital. A: Do n...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 17,
+          "question": "In a\t6-month-old child, thick curd like white\tpatch\nappears on the buccal mucosa. On rubbing it leaves an\nerythematous patch. Most likely diagnosis is:",
+          "correct_answer": "D",
+          "predicted_answer": "D",
+          "is_correct": true,
+          "response": "D:1, The lichen planus is known to be a common disease that affects the respiratory system and is often associated with skin cancer. It is a risk factor that may lead to inflammation and skin lesions....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 18,
+          "question": "Characteristic of venous blood flow of lower limb in duplex Doppler is?",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:D:Fluidic is a lipid monophasic. It is a type of blood clot that is caused by an abnormal blood flow of the lower limb. If there is a large amount of blood in the lower limb, it is caused by a small...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 19,
+          "question": "The source of calcium ions of a calcific bridge in a\ntooth in which calcium hydroxide pulpotomy has been\nperformed is:",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 20,
+          "question": "2, 3-BPG binds to sites of haemoglobin and the affinity for oxygen",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "2, 3-BPG binds to sites of haemoglobin and the affinity for oxygen. A) 4, decreases. B) 1, increases. C) 0, increases. D: increases. C: decreases. A) increases. B: decreases. C: decreases. D: increase...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 21,
+          "question": "Highest concentration of oxygen is delivered through?",
+          "correct_answer": "C",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "A:D:Nasal cannula B. Venturi mask B. Nasal cannula B. Venturi mask C. Mask with reservoir B. Venturi mask C. Mask with reservoir B. Venturi mask C. mask with reservoir B. Venturi mask C. mask with res...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 22,
+          "question": "Sharpest cusp is seen in",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 23,
+          "question": "A mother is Hbs Ag positive and anti Hbe Ag positive. Risk of transmission of Hep. B in child is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A mother is a positive and anti Hbs ag positive person. There is no reason to assume that the patient has any negative or positive health. It is not in any way beneficial to the patient to worry about...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 24,
+          "question": "In a patient with competent lips together at rest, the lip\nline is opposite the tips of the upper incisors. The lip line is then described as",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) Small lipline in a patient with competent lips together at rest, the lip line is the tip of the upper incisors. The lipline is the tip of the upper incisors. The tip of the upper incisors is the ti...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 25,
+          "question": "A patient presented to emergency with overdose some drug. There were increased salivation and increased bronchial secretions. On examination, blood pressure was 88/60 mmHg. RBC esterase level is 50. What should be the treatment of this person?",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) NOS (NOS (Neostigmine). A) PPC (PPC (PPC) (PPC) (PPC) (PC) (PC) (PPC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (PC) (P...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 26,
+          "question": "The current bar clasp design used is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The current bar clasp design used is: A: Mesio-occlusal rest B: Mesio-occlusal rest C: Mesio-occlusal rest A: Mesio-occlusal rest C: Mesio-occlusal rest C: Mesio-occlusal rest A: Mesio-occlusal rest C...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 27,
+          "question": "All of the following are true regarding Class-II inlay gingival margins preparation except?",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A:D:Prayal gingival margins preparation is required to ensure that the bone is able to be removed from the bone. B: The removal of week enamel rods can be done by a single tool, such as a rubber tool ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 28,
+          "question": "Breakdown of periodontal fibres in periodontitis is due to bacterial enzyme: (OR) Which of the following bacterial products have been implicated in initiation of inflammatory periodontal disease?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Possible cause for infection of periodontitis is a combination of enzymes and antibiotics. The enzymes can be helpful in preventing bacterial initiation of inflammatory periodontitis. A: Antibacterial...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 29,
+          "question": "In a study, two groups of newborns are checked for their weights based on whether their mothers received food supplements or not. The appropriate test which can be used for comparing the data is:",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "Paired T-test. A) Fischer test A Fischer test A Fischer test B: Fisher test B: Fischer test C: Fischer test A Fischer test C: Fischer test C: Fischer test C: Fischer test D: Fischer test D: Fischer te...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 30,
+          "question": "Which vitamin is required for glycogen Phosphorylase?",
+          "correct_answer": "A",
+          "predicted_answer": "C",
+          "is_correct": false,
+          "response": "The correct answer is C. P. P. P. L. A. P. L. A. S. P. L. A. S. P. L. A. S. P. L. A. S. P. L. A. S. L. A. S. L. A. S. L. A. S. L. A. S. L. A. S. L. A. S. S. L. A. S. L. A. S. L. A. S. L. A. S. L. A. S...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 31,
+          "question": "A child's behaviour is traced to have dental difficulties\nfrom\this\tmother.\tThe\tmost\tsatisfactory\tmethod\tof\nhandling the situation is to:",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 32,
+          "question": "Which of the following is the only complete cailage ring in the respiratory tree?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) Cricoid cailage. A) Thyroid cailage. B. Thyroid cailage. A) Thyroid cailage. A) Thyroid cailage. A) Thyroid cailage. B. Thyroid cailage. A. Thyroid cailage. A: Thyroid cailage. A: Thyroid cailage. ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 33,
+          "question": "Steps of intubation - arrange in sequence:- a. Head extension and flexion of neck b. Introduction of laryngoscope c. Inflation of cuff d. Check breath sounds with stethoscope e. fixation of the tube to prevent dislodgement",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:A:A:D:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 34,
+          "question": "In Erythroblastosis fetalis not involved is \u2013",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "Erythroblastosis Fetalis is not involved is. A) I am not sure if there is any other reason for this particular mutation in Erythroblastosis Fetalis, but it may be due to an excess of water in the syst...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [
+              "Uncertainty: not sure"
+            ],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 35,
+          "question": "A dentist suffered from Hepatitis B infection 3 months back. His laboratory tests are normal, but he is not allowed by the medical board to do surgical practice. He is:",
+          "correct_answer": "C",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "A: A: Bacterial carrier is the name of the disease that causes the throat pain and swelling in the mouth. B: The disease that causes the throat pain and swelling in the mouth is called hepatitis B. It...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.1,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [
+              "Low medical terminology ratio for medical question"
+            ],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 36,
+          "question": "A pediatrician in a district hospital with specialization neonatal care unit calls an ophthalmologist for consultation for which of the following?",
+          "correct_answer": "B",
+          "predicted_answer": "B",
+          "is_correct": true,
+          "response": "A newborn with bih weight 2300 grams is not a baby with a diastrophe. It is an ophthalmologist. The next step is to get a diagnostic tool for a new baby and then to check the blood type and get a bloo...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 37,
+          "question": "In a child with active liver failure, the most important prognosis factor for death is \u2013",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "E. As the majority of the world's population has not had any test results, the most common prognosis for death is an increase in the transaminase. This is a commonly used test to assess the presence o...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 38,
+          "question": "A patient went into shock immediately after normal delivery, likely cause:",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A: A patient went into shock immediately after normal delivery, likely cause: B:PPH. Eclampsia. C: Eclampsia. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH. D:PPH....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 39,
+          "question": "A patient presented with flat topped violaceous papules, thinning of nails and onycholysis. What is the microscopic finding observed in this patient?",
+          "correct_answer": "C",
+          "predicted_answer": "C",
+          "is_correct": true,
+          "response": "C) Basal cell degeneration. A) Prominent necrotic cell and the presence of a certain type of necrotic cell can lead to the formation of lesions in the brain that cause the brain to break into small se...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 40,
+          "question": "Which of the following is not. true regarding myelopathy?",
+          "correct_answer": "B",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:Pectoral jerk is not a medical condition. It is a condition that is caused by a variety of medical problems, including a wide variety of illnesses, including severe hyperlipemia, hypothyroidism, and...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 41,
+          "question": "Which of the following committees has recommended a 3-year bachelor degree in medical education for rural health service?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: The Indian Central Bureau of Health Investigation is a multi purpose organization that specializes in the health and treatment of rural health services. A: D: Srivastava Committee B: A: The D: A: D...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.1,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [
+              "Low medical terminology ratio for medical question"
+            ],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 42,
+          "question": "Sequential arrangement of fetal scans -",
+          "correct_answer": "D",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "Homerotopic antibody test (H3B-B test) is the test that tests for the presence of a certain genetic abnormality in the embryonic body. This test will help to determine if there is an underlying cause ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 43,
+          "question": "Which one of the following is a muscle splitting incision?",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A: The one of the following is a muscle splitting incision. A: Kocher's incision B: Kocher's incision C: Pfannenstiel incision C: Pfannenstiel incision C: Pfannenstiel incision C: Pfannenstiel incisio...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 44,
+          "question": "Multiple canals in mandibular premolars are seen in?",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "Maticas are not a common occurrence in mandibular premolars, but they are very rare. D: Different types of caucians are common, and canals are uncommon in certain types of caucians. A: A: D:A:C:D:D:C:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 45,
+          "question": "Which of the following blade angle is appropriate for scaling and root planing",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A:A:A:A:A, B:D:A, B:D:A:D:A:D:A:A:A:A:D:A:A:A:A:A:D:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 46,
+          "question": "Which pa of brachial plexus do not give branches",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "Hello. The roots of the pa of brachial plexus do not give branches. The roots of the root of the root do not give branches. However, there are some branches that are the same way, that are not as simp...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 47,
+          "question": "If the Rb gene phosphorylation is defective, which of the following will happen?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A cell cycle can be defective at the G2 phase and thus cannot be considered as a clinical marker of an underlying disease. A) G2 phase is a condition that occurs at the beginning of the G2 phase an...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 48,
+          "question": "Cumulative index is:",
+          "correct_answer": "C",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) Russet's periodontal index is a type of birth control called S-H. Loe and Silness. B) Penet's periodontal index is a type of birth control called S-H. Loe and Silness. C. Penet's periodontal index ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 49,
+          "question": "The cells which will proliferate from top to bottom of villi are:",
+          "correct_answer": "C",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The cells that will proliferate from top to bottom of villi are: B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, B, ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        }
+      ],
+      "timestamp": "2025-07-26T23:06:37.725273"
+    },
+    "medmcqa": {
+      "dataset_name": "medmcqa",
+      "total_questions": 50,
+      "correct_answers": 20,
+      "accuracy": 0.4,
+      "factual_consistency_metrics": {
+        "average_consistency_score": 0.996,
+        "low_consistency_count": 0,
+        "consistency_percentage": 100.0
+      },
+      "hallucination_metrics": {
+        "average_hallucination_score": 0.084,
+        "high_risk_count": 0,
+        "safety_percentage": 100.0
+      },
+      "detailed_results": [
+        {
+          "question_id": 0,
+          "question": "Which of the following is not true for myelinated nerve fibers:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:Pulse through myelinated fibers is not fast enough to induce an effective reaction, it is more efficient to avoid the disruption of the nerve fibers by preventing the nerves from forming, and thus t...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 1,
+          "question": "Which of the following is not true about glomerular capillaries')",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The oncotic pressure of the fluid leaving the capillaries is less than that of the fluid exiting the capillaries. A) The oncotic pressure of the fluid exiting the capillaries is less than that of the ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "A 29 yrs old woman with a pregnancy of 17 week has a 10 years old boy with down syndrome. She does not want another down syndrome kid; best advice to her is",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A 29 yrs old woman with Down syndrome has a normal and normal heartbeat. As far as possible, I can advise you to go for a blood test and get the blood test done. If you have not received the results, ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "Axonal transport is:",
+          "correct_answer": "C",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:D:1 Antegradial transport is a type of hyperrotic spinal disease that is not easily diagnosed. It can lead to the following: 1. E. Cardiomyopathy 2. Trichyloid osteoderma (D:2) and osteoderma (D:3) ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "Low insulin to glucagon ratio is seen in all of these except:",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketogenesis. A. Ketog...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "Concentration of tropicamide:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:0.05 is the minimum amount of tropicamide that is available in the blood to be extracted from the body after a blood test. 0.05 is the minimum amount of tropicamide that is available in the body aft...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "Which of the following statements is true regarding H I N1 Influenza?",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "H I N1 Influenza is a serious infection that is commonly caused by acute inflammation of the lymphatic system, and can cause some types of inflammation, such as kidney stones, meningitis, and other he...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "Which of the following are not a branch of external carotid Aery in Kiesselbach's plexus.",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A: The common and common reason for these types of cancers is not a branch of external carotid Aery in Kiesselbach's plexus. This is a common cause of a lot of cancers, including COPD, COPD, and UTI. ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "Diagnosis of the following ECG-",
+          "correct_answer": "B",
+          "predicted_answer": "B",
+          "is_correct": true,
+          "response": "B) Ventricular cystal hypoplasia (ECG) is a rare congenital blood clot that can cause a variety of symptoms including stiffness and pain, blindness, and shortness of breath. This condition is a very s...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "A blue new born presents with cyanosis. The X\u2013ray chest reveal oligaemic lung field and normal sized heart. Most likely diagnosis is \u2013",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A:D Estein's anomaly is a common type of pulmonary hypertension that occurs due to pulmonary hypertension. It is not uncommon in the US or in other countries, but is more common in the developed world...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "27.\tThe lateral spread of dental caries is facilitated mostly  by the",
+          "correct_answer": "B",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "27.|-methyl-ephenyl-pyryl-dihyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thyl-thy...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 11,
+          "question": "A second-year PG resident tells you to perform an ABG of a patient. All of the following are true about performing an ABG except:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A second-year PG resident is asked to perform an ABG of a patient. A third-year PG resident is asked to perform an ABG of a patient. A fourth-year PG resident is asked to perform an ABG of a patient. ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 12,
+          "question": "Respiratory rhythm generation center is located at:",
+          "correct_answer": "B",
+          "predicted_answer": "B",
+          "is_correct": true,
+          "response": "Dorsal respiratory group B) Ventral respiratory group B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 13,
+          "question": "Gait apraxia is seen in thromboembolic episode involving:",
+          "correct_answer": "A",
+          "predicted_answer": "C",
+          "is_correct": false,
+          "response": "Gait apraxia is seen in thromboembolic episode involving: C. ACA C. PCA. B. ACA C. C. C. C. C. B. A. C. C. C. A. C. A. C. C. C. A. C. B. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. C. ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 14,
+          "question": "Heavy forces on periodontal ligament causes:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Possible cause of cystic disorder. A: Thyroid dysfunction. B: Thyroid dysfunction. C: Thyroid dysfunction. C: Thyroid dysfunction. A: Thyroid dysfunction. A: Thyroid dysfunction. B: Thyroid dysfunctio...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 15,
+          "question": "About N. gonorrhoea, all are true except",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "N. gonorrhoea is a rare genetic defect in humans, and it is a common cause of urethritis in male humans. This condition can also be caused by the removal of the finger of the hand from the hand, or by...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 16,
+          "question": "A patient who was on ventilator and being ventilated for past few days, suddenly pulls out the endotracheal tube. What is the next step of management?",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:A:A:D:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 17,
+          "question": "In a\t6-month-old child, thick curd like white\tpatch\nappears on the buccal mucosa. On rubbing it leaves an\nerythematous patch. Most likely diagnosis is:",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "1. Lichen planus is a common form of cancer that occurs due to a simple bacterial infection that occurs in the mucosa. 2. Lichen planus is a bacterial infection that can spread to the upper body, and ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 18,
+          "question": "Characteristic of venous blood flow of lower limb in duplex Doppler is?",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:Pppler is a class of blood flow that is associated with a type of venous blood flow that is called the vaginine. It is a class of blood that is associated with the vaginine blood flow. There are mul...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 19,
+          "question": "The source of calcium ions of a calcific bridge in a\ntooth in which calcium hydroxide pulpotomy has been\nperformed is:",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) Derided cells and Derided cells are the cells that are the cells that are the cells that are the cells that are the cells that are the cells that are the cells that are the cells that are the cells...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 20,
+          "question": "2, 3-BPG binds to sites of haemoglobin and the affinity for oxygen",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "3, 3, 5, 6, 7, 8, and 9, decrease. A) 6, increases. B) 6, 7, 8, and 9, decrease. A) 7, 9, decreases. A) 12, increases. B) 9, decreases. A) 15, increases. A) 15, decreases. A) 15, increases. A) 15, inc...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 21,
+          "question": "Highest concentration of oxygen is delivered through?",
+          "correct_answer": "C",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) Nasal cannula. B) Venturi mask. C) Bag and mask. A) Venturi mask. C. mask. A) mask mask. A) mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask mask ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 22,
+          "question": "Sharpest cusp is seen in",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) Lower Premolar Cusp is seen in. A) Lower Premolar Cusp is seen in. B. A) Lower Premolar Cusp is seen in the lower canines. A: Lower Premolar Cusp is seen in the lower canines. A: Lower Premolar Cus...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 23,
+          "question": "A mother is Hbs Ag positive and anti Hbe Ag positive. Risk of transmission of Hep. B in child is:",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "A mothers are Hbs ag positive and ag positive. A pregnancy is a pre-plastating infection. B. A mother is not a patient in any way that can get the vaccine. It is a rare condition that can cause seriou...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 24,
+          "question": "In a patient with competent lips together at rest, the lip\nline is opposite the tips of the upper incisors. The lip line is then described as",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "This is a common symptom of the lipline. The lipline is the opposite of the tips of the upper incisors. This can cause a range of symptoms, including mouth tightness, pressure, and decreased sensitivi...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 25,
+          "question": "A patient presented to emergency with overdose some drug. There were increased salivation and increased bronchial secretions. On examination, blood pressure was 88/60 mmHg. RBC esterase level is 50. What should be the treatment of this person?",
+          "correct_answer": "B",
+          "predicted_answer": "B",
+          "is_correct": true,
+          "response": "A patient presented to emergency with overdose some drug. There were increased salivation and increased bronchial secretions. RBC esterase levels were 85/60 mmHg. RBC esterase level was 50. And it was...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 26,
+          "question": "The current bar clasp design used is:",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "The current bar clasp design used is: A) Mesio-occlusal rest A) Mesio-occlusal rest B) Mesio-occlusal rest C) Mesio-occlusal rest C) Mesio-occlusal rest B) Mesio-occlusal rest C) Mesio-occlusal rest C...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 27,
+          "question": "All of the following are true regarding Class-II inlay gingival margins preparation except?",
+          "correct_answer": "D",
+          "predicted_answer": "C",
+          "is_correct": false,
+          "response": "C:D:Fiberic acid inlay gingival margin Preparation for the following: A: Reduction of week enamel rods. B: Increased metal burnishness. C: Reduction of lap sliding fit of metal slide over the edge of ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 28,
+          "question": "Breakdown of periodontal fibres in periodontitis is due to bacterial enzyme: (OR) Which of the following bacterial products have been implicated in initiation of inflammatory periodontal disease?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) Crocus B (OR) is the bacterial infection that is involved in initiation of inflammatory periodontitis. A) Crocus B is the bacterial infection that is associated with the inflammatory periodontitis ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 29,
+          "question": "In a study, two groups of newborns are checked for their weights based on whether their mothers received food supplements or not. The appropriate test which can be used for comparing the data is:",
+          "correct_answer": "C",
+          "predicted_answer": "C",
+          "is_correct": true,
+          "response": "C) Fischer Test C. Chariot Test C. Fischer Test C. Fisher Test C. Fischer Test C. Fischer Test C. Fisher Test C. Fisher Test C. Fischer Test C. Fisher Test C. Fisher Test C. Fischer Test C. Fisher Tes...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 30,
+          "question": "Which vitamin is required for glycogen Phosphorylase?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Tetraline is a vitamin that requires glycogen phosphorylase. It is a common ingredient in many foods, including fruits, vegetables, and high in vitamin D3 (doxygenase). Therefore, it is vital to ensur...",
+          "factual_consistency": {
+            "factual_consistency_score": 0.8,
+            "issues_found": [
+              "Heart incorrectly associated with kidney/digestion function"
+            ],
+            "confidence_indicators": [],
+            "assessment": "Moderate consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 31,
+          "question": "A child's behaviour is traced to have dental difficulties\nfrom\this\tmother.\tThe\tmost\tsatisfactory\tmethod\tof\nhandling the situation is to:",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "D:A) Modify the child's face by using a small amount of alcohol. A) Modify the face by using a small amount of alcohol. B) Modify the face by using a small amount of alcohol. A) Modify the face by usi...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 32,
+          "question": "Which of the following is the only complete cailage ring in the respiratory tree?",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "This is the only complete cailage ring in the respiratory tree. The rest are only incomplete cailage rings. B. Thyroid cailage is not the complete cailage ring, it is a part of the fibral cyst that is...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 33,
+          "question": "Steps of intubation - arrange in sequence:- a. Head extension and flexion of neck b. Introduction of laryngoscope c. Inflation of cuff d. Check breath sounds with stethoscope e. fixation of the tube to prevent dislodgement",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:ABCDE A: A: B: E: CBDD: CBD E: CBD E: CBDE A: E: A: CBDE CBDE A: CBDE A: CBDE B: CBDE CBDE A: CBDE CBDE A: CBDE A: D: CBDE B: CBDE CBDE CBDE B: D: CBDE B: CBDE B: CBDE CBDE A: CBDE B: CBDE CBDE CBDE...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 34,
+          "question": "In Erythroblastosis fetalis not involved is \u2013",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "Erythroblastosis Fetalis is not involved is a serious condition. The symptoms of the condition are a range of symptoms, including symptoms such as vomiting, fatigue, and vomiting. It is a condition ch...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 35,
+          "question": "A dentist suffered from Hepatitis B infection 3 months back. His laboratory tests are normal, but he is not allowed by the medical board to do surgical practice. He is:",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A:Denteminal infection. A: General Hospital. B: Hypoarthritis. C: Hypoarthritis. A: Hypoarthritis. A: Hypoarthritis. C: Hypoarthritis. A: Hypoarthritis. A: Hypoarthritis. A: Hypoarthritis. B: Hypoarth...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.1,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [
+              "Low medical terminology ratio for medical question"
+            ],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 36,
+          "question": "A pediatrician in a district hospital with specialization neonatal care unit calls an ophthalmologist for consultation for which of the following?",
+          "correct_answer": "B",
+          "predicted_answer": "B",
+          "is_correct": true,
+          "response": "A newborn with blood pressure is a newborn with low blood pressure, which can be caused by a lack of oxygen in the blood. This is the result of the bleeding and the need to rest. The first thing to do...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 37,
+          "question": "In a child with active liver failure, the most important prognosis factor for death is \u2013",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) Lymphoma bilellosa (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma bilellosa) (lymphoma ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 38,
+          "question": "A patient went into shock immediately after normal delivery, likely cause:",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A:A:Hyperemia. A:Hyperemia. B:PPH is a type of parasitic infection that causes it to cause a slight inflammation in the tissue, which can lead to inflammation, swelling, and inflammation. A:Hyperemia ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 39,
+          "question": "A patient presented with flat topped violaceous papules, thinning of nails and onycholysis. What is the microscopic finding observed in this patient?",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "1. Antimicrobial bacterial infection. 2. Acantholysis. 3. Antimicrobial bacterial infection. 4. Antimicrobial bacterial infection. 5. Antimicrobial bacterial infection. 6. Antimicrobial bacterial infe...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 40,
+          "question": "Which of the following is not. true regarding myelopathy?",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) B:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 41,
+          "question": "Which of the following committees has recommended a 3-year bachelor degree in medical education for rural health service?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:HRCA3: A: Chiron and Chiron are the two main elements of the health care system. A: Chiron is a type of boraxine and is a protein that is found in the blood of the brain. B: In a modern age, it is i...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.1,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [
+              "Low medical terminology ratio for medical question"
+            ],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 42,
+          "question": "Sequential arrangement of fetal scans -",
+          "correct_answer": "D",
+          "predicted_answer": "D",
+          "is_correct": true,
+          "response": "D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 43,
+          "question": "Which one of the following is a muscle splitting incision?",
+          "correct_answer": "D",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) Lanz incision is a muscle splitting incision that is caused by a specific type of muscle splitting incision. The type of muscle splitting incision is called a peptidicula, and the muscle splitting ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 44,
+          "question": "Multiple canals in mandibular premolars are seen in?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Caucians. A: There are multiple canals in mandibular premolars. A: As far as I know, no more than four canals can exist in the mandibular premolars. B: Several canals can exist in the mandibular premo...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 45,
+          "question": "Which of the following blade angle is appropriate for scaling and root planing",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) A: A:D:A:A:D:A:D:A:A:D:A:D:A:D:A:D:A:D:A:D:A:D:A:D:D:A:D:A:D:A:D:A:D:A:D:A:D:D:A:D:A:D:A:D:A:D:D:A:D:A:D:D:D:A:D:A:D:A:D:A:D:D:D:D:D:A:D:D:A:D:A:D:D:A:D:A:D:D:A:D:A:D:D:A:D:D:A:D:D:A:D:D:D:A:D:A:D:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 46,
+          "question": "Which pa of brachial plexus do not give branches",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "The root of the pa of brachial plexus do not give branches. The trunk is a baryginal plexus that gives branches. The baryginal plexus is a small branch that gives branches. It is the same type of root...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 47,
+          "question": "If the Rb gene phosphorylation is defective, which of the following will happen?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) Cell cycle will stop at G2 phase. A) There is no immediate need for Rb gene phosphorylation in the body. B) There are no immediate need for Rb gene phosphorylation in the body. B) The cell cycle wi...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 48,
+          "question": "Cumulative index is:",
+          "correct_answer": "C",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:Ahemumontal index (Loe and Silness) is a type of steroid that is a steroid that is used to treat inflammation of the prostate. The condition is caused by an underlying genetic mutation in the prosta...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 49,
+          "question": "The cells which will proliferate from top to bottom of villi are:",
+          "correct_answer": "C",
+          "predicted_answer": "C",
+          "is_correct": true,
+          "response": "C) Paneth cells are the cells that will proliferate from top to bottom of villi. These cells are a type of protein that can be found in the body, and can be used to treat various diseases and illnesse...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        }
+      ],
+      "timestamp": "2025-07-26T23:10:54.307551"
+    },
+    "healthsearchqa": {
+      "dataset_name": "healthsearchqa",
+      "total_questions": 50,
+      "correct_answers": 43,
+      "accuracy": 0.86,
+      "factual_consistency_metrics": {
+        "average_consistency_score": 1.0,
+        "low_consistency_count": 0,
+        "consistency_percentage": 100.0
+      },
+      "hallucination_metrics": {
+        "average_hallucination_score": 0.24,
+        "high_risk_count": 0,
+        "safety_percentage": 100.0
+      },
+      "detailed_results": [
+        {
+          "question_id": 0,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A. I understand your concern. A. I am not looking for any more details. B. I have no other way of knowing what you are doing. C. A. A. I do not think it is important. B. B. A. A. A. A, it is not im...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 1,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A. A, the first step is to get the correct answer to this question is to go to a doctor, and get the appropriate medical attention. B. A, the first step is to get the correct answer to the question...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A) a, the number of medications that you take is not available. B) A) this is not available. C) this is not a medical condition, so it is not necessary to worry about it. B) A) a, a number of medic...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A: A:A: A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, this is not a very good question. A:  B) A: It is not possible to answer that you do not have a choice for the question. A: A: the answer is that the answer is not a very good question. B: The a...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A) A: A: There is no need to worry. A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:A:A: A: A: A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) C-2 (c). C-2 (c) is not available. It is a protein that contains C-3 (c) (c) (c) (c) (c) (c) (c) (c) (c) (c) (c) is not available. It is a rare type of protein that contains the exact same amount o...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) This information is not available. B. This information is not available. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B. B...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, if you do not have any other information, then you can use the one you need. B) If you do not have any other information, then you can use the one you need, then you can use the one you have. A)...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A:A:D:A:A:A:D:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 11,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) The right choice is to get the blood sample from the right part of the body, which is the part that is most important to determine the type of disease. It is also important to know if there is any ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 12,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D: A:A: The amount of time that a person has been in contact with another person, the amount of time that a person has been in contact with a person, the amount of time that a person has been in conta...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 13,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "D:This information is not available. This information is not available. A) =A) A) A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 14,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A) A, this information is not available. B) A) A, the person who wants to be on the list is not on the list. B) A, the person who has a large list of lists of lists is not on the list. A) A, this i...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 15,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:A: A: A: A: A:A: A:A:A: A: A: A: A: A:A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 16,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A: There is no need to worry about the problem. A: The problem is that the person is not doing a good job of answering the question. B: The problem is that the person has not been able to participa...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 17,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) C. B is not available. D: The most important part of the question is that the answer is not available. D: There are no other options. A: This is not a problem. B: C. B is not available. C: A: There...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 18,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) This information is not available. A) The answer is not available. A) As far as the tests are concerned, the answer is no, the answer is no, the answer is no, the answer is no, the answer is no, th...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 19,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A)  B. B is a type of a disease that is a type of brain damage. It is characterized by a lack of blood flow to the brain that is not caused by the presence of any other blood vessels or blood vessels....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 20,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, if you have not been diagnosed with a blood clot or infection, there is no need to seek medical attention for any further complication. A) * B) A blood clot is not present in the eyes, eyes, or ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 21,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A) this information is not available is available. B) C-lactic acid is not available. A) the absence of B-lactic acid is a common and common occurrence in people with clinical conditions. B) A-lact...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 22,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A: The number of people who have been treated for the same illness are not known. B: This is not helpful. A: This is not a medical condition and only occurs in certain cases, where the patient is n...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 23,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) As you have not been able to answer the question, the answer is still a simple question. A, no, there is not enough information to answer the question. B: As you have not been able to answer the qu...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 24,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:A: If you are not having any of the above, then you should take the following medicines: 1. No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 25,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 26,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A)  B is not available. A) A, it is not available. B. A) A, it is not available. A: A: it is not available. A: it is not available. A: it is not available. A: it is not available. A: it is not avai...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 27,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A,...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 28,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A:  B:    B: This information is not available is necessary for this case. A:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B:  B...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 29,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "A: A: A, no need for this is required. A: As a matter of a matter of age, it is possible to receive a good dose of vitamin A, B, and B (b) for vitamin D. A: A: As a matter of a matter of age, it is po...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 30,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, this information is not available is available. A, there is no need to discuss the issue. B: This information is not available. A, the problem is that the information is not available. A, it is ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 31,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, if you do not have a medical history of a heart attack, you should not be going to the doctor for further evaluation of your condition. B) As a result, you have a history of a heart attack, you ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 32,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A)  is a common name of the disease that is commonly associated with the infection. B) A common name of the disease is an infection that is known to cause fever, fever, and fever-ish blood. A commo...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 33,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A) A:  B-A, this information is not available. B: This information is not available. A: B-A, this information is not available. A: A: A: A: A:A:A: A:A:A: A: A: A:A: A: A: A: A: A: A: A: A: A: A: A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 34,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A)  A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 35,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "D:C is not available. There is no need for any treatment for this condition, as the presence of the virus can be ruled out by the following following: 1. It is not available. 2. It is not relevant. 3....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 36,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A: There are some studies on the number of people who have taken the medication by themselves, including the research group A. A: A: There are some studies on the number of people who have taken th...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 37,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "A: A, we have no clue as to what you are doing. B) A: No, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no, no...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 38,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, you have been diagnosed with a severe case of schizophrenia, and this is not a disease. B) The condition is not known in the clinical literature, but it is known to be a mental disorder that can...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 39,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, this is not possible. B, it is not possible. A, if it is not possible, it is not possible. A, it is not possible. A, it is not possible. A, it is not possible. A, it is not possible. A, it is no...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 40,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) This information is not available. A) A) A) A, it is not available B) A) A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A, A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 41,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A, b is not available at all. A) A, b is not available at all. B, b is not available at all. B, b is not available at all. A, b is not available at all. A, b is not available at all. B, b is not av...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 42,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A: A:A: A: A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 43,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A) B is not available. A) B is not available. A) B is not available. A) B is not available. A) A) A is not available. A) B is not available. A) A) B is not available. A) B is not available. A) A is...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 44,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A) A, if you can only afford to go for a one-year warranty, you should be able to do it in the following two years. A) A, if you can only afford a one-year warranty, you should go for the two-year ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 45,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A) B is not available to you. A: This is not true for any type of cancer. A: You can always use a lower dose of antidepressants like Proline or Prozac. B: B: A: A: A: A: A: A: A: A: A: A: B: A: A: ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [
+              "High certainty: always"
+            ],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 46,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A)  A. A is not available in a normal body. A, B is not available in any type of normal or normal life. A, B is not available in a normal body. A, B is not available in a normal life. A, B is not avai...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 47,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B: This information is not available is not available in your medical history. However, the answer is that the order of the answers is not relevant, since the order of the answers is not known. C: C: ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 48,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Ea is that the problem with the face is that it has a pattern of white patches in the front of the face. The face is also very hard to distinguish between the faces. The pattern of white patches in th...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 49,
+          "question": "",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A: A: A: A: A: A:A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        }
+      ],
+      "timestamp": "2025-07-26T23:15:16.659168"
+    },
+    "mediqa": {
+      "dataset_name": "mediqa",
+      "total_questions": 50,
+      "correct_answers": 23,
+      "accuracy": 0.46,
+      "factual_consistency_metrics": {
+        "average_consistency_score": 1.0,
+        "low_consistency_count": 0,
+        "consistency_percentage": 100.0
+      },
+      "hallucination_metrics": {
+        "average_hallucination_score": 0.248,
+        "high_risk_count": 0,
+        "safety_percentage": 100.0
+      },
+      "detailed_results": [
+        {
+          "question_id": 0,
+          "question": ". what is a corporation?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A corporation is a type of company that serves as a legal body to protect and serve the interests of a small group of people. A, b, c, and d, are the only two examples of companies that are useful for...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 1,
+          "question": "why did rachel carson write an obligation to endure",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The following medical questions should be answered: 1. The following medical questions are: 1. The following medical questions should be answered: 1. The following medical questions should be answe...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "why did the progressive movement fail to advance racial equality quizlet",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B:The progressive movement failed to advance racial equality quizlet. A: The progressive movement was not able to advance racial equality quizlet. A: It was only a matter of time. B: The progressive m...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "why do police need to understand what the forensic scientists do",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The forensic scientists do not understand what the forensic scientists do: B) B) The forensic scientists do not understand what the forensic scientists do: C. B. The forensic scientists do not unde...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "do owls eat in the day",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Bowl are not a very common species of owls. They are a type of bird that are closely related to the European bird Ostrichidae, which is a bird that is closely related to the European bird Ostrichidae ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 5,
+          "question": "symptoms of a dying mouse",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "D:This information is not available. B) This information is not available. B) The patient is not a member of the community, therefore, they have to be consulted by a doctor or a specialist to determin...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 6,
+          "question": "average number of lightning strikes per day",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) There are no lightning strikes per day in the world of lightning. It is only a matter of time before the lightning strikes the target of the lightning strike. The target of lightning strikes is the...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 7,
+          "question": "can you burn your lawn with fertilizer",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:The use of fertilizer is not permitted. The use of the fertilizer is not permitted. The use of the fertilizer is not permitted. The use of the fertilizer is not allowed. The use of the fertilizer is...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 8,
+          "question": "are volvox autotrophic or heterotrophic",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) Volvox autotrophic is a type of animal that is a type of animal that can produce a range of different types of cholesterol and other hormones, such as cholesterol, iron and cholesterol. It is impor...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 9,
+          "question": "average force of a raindrop",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B. The average force of a raindrop is approximately 1.1 cm, which is the length of a raindrop. This is not a precise measurement of the length of the raindrop. This is not a good indicator of the leng...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 10,
+          "question": "chart for foods low in potassium.",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "D:The chart for potassium is not available. B) The question is not available in your case. If you have been doing any of the above, you will not be able to take any of the following foods. 1. Keto-bas...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 11,
+          "question": "are saltwater crocodiles legal pets yahoo",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "Cricket is not legal pets yahoo, as the species is not closely related to crocodiles. B. The species is called aoecotch. C. This is a common name for crocodiles, and it is used as a name for certain s...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 12,
+          "question": "dayton ohio time is what",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Dayton ohio time is a commonly used abbreviation for dayton o2, which is the number of days in a year that a person takes a day to die. A) A, it is not uncommon to have a high number of days in a year...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 13,
+          "question": "goch meaning",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:This information is not available. D:The best part of your question is that the word is a, is a, and is not a, in English. It is not common in English to use a, in English, to use a, to be a, in Eng...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 14,
+          "question": "does drinking water help eczema",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Eczema can be caused by a combination of several factors, including alcohol, nicotine, and other medications. A) A) > B-V (ezyme) B-V (ezyme) B-V (ezyme) B-V (ezyme) C-V (ezyme) B-V (ezyme) B-V (ezyme...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 15,
+          "question": "how much money has innocet donated to charity",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The last time I have been on a diet is when you have been eating healthy and you are not exercising and you are not exercising. A) I am not on a diet and you have not been exercising and your body ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 16,
+          "question": "symptoms of a gastric ulcer in women",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A serious case of gastric ulcer in women is a type of gastric ulcer in which the stomach may develop an abnormal growth of the stomach muscles. This is a serious condition that occurs when the abdo...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 17,
+          "question": "how often can ativan be taken",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The answer is not available. A) ativan is not an effective drug. It is a cocktail of drugs that are used to treat depression and anxiety. It is not available to the general population, and it is no...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 18,
+          "question": "how many oscars did star wars a new home win?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: The Star Wars a new home win is a good thing. A: The Star Wars a new home win is a good thing. B: The Star Wars a new home win is a good thing. C: The Star Wars a new home win is a good thing. A: T...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 19,
+          "question": "how many years did william bradford serve as governor of plymouth colony?",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The answer is not available. B. The answer is not available. C. The answer is not available. B. The answer is not available. C. The answer is not available. C. The answer is not available. B. The a...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 20,
+          "question": "albany mn population",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B: The age of the n family is not known. A, it is not known that the age of the family is known. B: The age of the family is not known. C: The age of the family is not known. A, it is not known that t...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 21,
+          "question": "how many inspector general nominations from trump",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A) A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A: A:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 22,
+          "question": "define preventive",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) This information is not available. B) The only option is to take the course of antibiotics, the most effective way is to take the antibiotic. B. The most effective way to take antibiotics is to tak...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 23,
+          "question": "does mcdonald's own panda express",
+          "correct_answer": "A",
+          "predicted_answer": "C",
+          "is_correct": false,
+          "response": "Mcdonalds own panda express is not available. It is available only in the US. C. B. C. C. B. C. C. B. C. C. C. C. B. C. C. C. C. B. C. C. C. B. C. C. C. C. C. C. C. C. D. C. C. D. C. C. C. C. C. C. C....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 24,
+          "question": "causes of achalasia",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:Paleasia is a condition characterized by an excessive amount of blood vessels in the brain, including the brain. There is a high risk of developing a blood clot and a blood clot in the brain that ca...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 25,
+          "question": "how many direct subclasses can a superclass have",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A superclass can have a direct subclass of superclass of superclasses. A. superclass of superclass of superclass is a class of superclass. A. superclass of superclass of superclass is a class of su...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 26,
+          "question": "current weather in volcano, ca",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The current weather in volcanoes is not available. A) The volcano has been found to be more active than the surrounding area, so the treatment is required. B. B. B. B. B. B. C. B. C. B. C. B. B. C....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 27,
+          "question": "symptoms of a lumbar disc ready to rupture",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) I have no problem with the problem of a lumbar disc ready to rupture. A) lumbar disc is not an organ in the body that can cause damage to the muscle or the brain. A) Lumbar disc is not an organ tha...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 28,
+          "question": "december weather in grand cayman",
+          "correct_answer": "A",
+          "predicted_answer": "D",
+          "is_correct": false,
+          "response": "D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:D:...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 29,
+          "question": "average salary in uzbekistan",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) this information is not available. A) there are only two things that are important: A) there is no difference between the two, and B) there is no difference between the two, and C) there is no diff...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 30,
+          "question": "best business to do in tamilnadu",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) As far as you know, there is no need to go to any further. As far as the investigation is concerned, the only solution is to go for a multidimensional screening. It is possible that the answer is t...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 31,
+          "question": "can you sponsor yourself for an ead",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "EAD is not a medical condition. This is not a medical condition. It is not a condition. It is a condition of the brain's ability to control and control the blood flow to the brain. In the brain's natu...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 32,
+          "question": "how many days after ovulation can i tell i'm pregnant",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) This information is not available. B) The answer is not available. C. The question is not available. C. The answer is not available. C. The answer is not available. C. The answer is not available. ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 33,
+          "question": "hiw to make your 3g better on a samsung galaxy ring",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "B:Hw to make your 3g better on a galaxy ring. A) it is not available. B. As it is not available, it is not possible for anyone to know the exact purpose of it. C. If it is not available, then it is no...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 34,
+          "question": "how much are postage stamps right now",
+          "correct_answer": "A",
+          "predicted_answer": "C",
+          "is_correct": false,
+          "response": "C. The only reason why you are not able to use a postal service is because you have no money and therefore are not able to use a tax stamp. C. The answer is that you have no money. B. The reason why y...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 35,
+          "question": "borax for tapeworms in cats",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "borax for tapeworms in cats is a medical condition that occurs when cats have dry eyes, which is caused by a deficiency of the pigment in the blood membrane. It is not a medical condition. It is not a...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 36,
+          "question": "color overlay photoshop",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) This information is not available. The color overlay photoshop is not available in the picture. D: The photo is not available in the photo. The photo is available in the photo. D: The picture is no...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 37,
+          "question": "how much spinal fluid does the brain make each day",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B:D:The brain is not a good source of spinal fluid. It is a bad source of spinal fluid. It can cause serious problems, especially when it is in the brain, and can lead to serious complications. B. The...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 38,
+          "question": "symptoms of air pollution exposure",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) This information is not available. C. A) This information is not available to you. B. This information is not available to you. B. This information is not available to you. C. A) C. A. C. A. C. A. ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 39,
+          "question": "average temperature bardufoss",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A bardufoss is the best kind of bardufoss. B) A bardufoss is the best type of bardufoss. C) A bardufoss is the best kind of bardufoss. A bardufoss is the best kind of bardufoss. A bardufoss is the ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 40,
+          "question": "average temperature cardiff wales",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A patient with a fever of fever of fever is a patient with a fever of fever is a patient with fever of fever. A patient with fever of fever is a patient with fever of fever is a patient with fever ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 41,
+          "question": "how long does it take for your a1c to go down?",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) A1C is a very fast recovery period for a1c, as it is a single-month-long-year-long-year-period. It takes about an hour to recover from an A1C. A2C is an important time for an A2C to recover from a1...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 42,
+          "question": "according to the catholic teaching how are children viewed",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: A: A: A: A: There are no other indications that the catholic teaching is not available. B: A: A: A: A: A: There are no other indications that the catholic teaching is not available. B: A: A: A: A: ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 43,
+          "question": "how fast does a apple charge your phone",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) Apple is a quick and easy way to know if a person is having trouble viewing a photo or reading a text on a phone. A) It is not possible to make it clear in text and pictures, because it is difficul...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 44,
+          "question": "how many tuesday in 2015",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B) The answer is that the answer is not available. The answer is not available. The answer is not available. The answer is not available. The answer is not available. The answer is not available. The ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 45,
+          "question": "highest paying subspecialty in orthopedics",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A: The highest paying subspecialty in orthopedics is a medecil. A: The highest paying subspecialty in orthopedics is a multivitamin, which is a type of vitamin that comes from the blood of the blood v...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 46,
+          "question": "____________________ is considered the father of modern medicine.",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "A) _______ is considered the father of modern medicine. C. is the mother of modern medicine. D: A. is the name of a modern medicine. D: A. is the name of a modern medicine. C. is the name of a modern ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 47,
+          "question": "bmo harris bank routing number kansas city mo",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "bmo harris bank routing number kansas city mo is not available. it is a bank that serves as a financial aid to the banks. bmo harris bank routing number kansas city mo is not available. the bank would...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 48,
+          "question": "durham va benefits",
+          "correct_answer": "A",
+          "predicted_answer": "B",
+          "is_correct": false,
+          "response": "B:Durham va is not a medicine. The answer is that it does not benefit in the long term and is not a very effective treatment for a person with depression. It is also not very helpful in the long term....",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 49,
+          "question": "symptoms of amoebas",
+          "correct_answer": "A",
+          "predicted_answer": "A",
+          "is_correct": true,
+          "response": "Amoebas is a common symptom of amoebas. This is not an issue that is more common than other types of amoebas. This is a medical condition that is caused by an imbalance of amoebas in the body. It can ...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        }
+      ],
+      "timestamp": "2025-07-26T23:19:38.482177"
+    },
+    "dummy_medical": {
+      "dataset_name": "dummy_medical",
+      "total_questions": 5,
+      "correct_answers": 1,
+      "accuracy": 0.2,
+      "factual_consistency_metrics": {
+        "average_consistency_score": 0.96,
+        "low_consistency_count": 0,
+        "consistency_percentage": 100.0
+      },
+      "hallucination_metrics": {
+        "average_hallucination_score": 0.24000000000000005,
+        "high_risk_count": 0,
+        "safety_percentage": 100.0
+      },
+      "detailed_results": [
+        {
+          "question_id": 0,
+          "question": "What is the primary function of the heart?",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "The primary function of the heart is to detect a pulse. If it is not detectable by blood glucose levels or other serum tests, it will be a sign of a heart attack or a heart attack. In the case of a he...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 1,
+          "question": "Which vitamin deficiency causes scurvy?",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) Vitamin B is a type of vitamin that causes scurvy. A. B. C. D. A. D. A. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D. D....",
+          "factual_consistency": {
+            "factual_consistency_score": 0.8,
+            "issues_found": [
+              "Scurvy incorrectly linked to wrong vitamin"
+            ],
+            "confidence_indicators": [],
+            "assessment": "Moderate consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 2,
+          "question": "What is the normal range for human body temperature?",
+          "correct_answer": "B",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "A) 35-36 degrees C is the normal range for human body temperature. C) 38-39 degrees C is the normal range for human body temperature. A) A) A) A, C is the normal range for human body temperature. B) A...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.0,
+            "risk_level": "Minimal Risk",
+            "detected_issues": [],
+            "recommendation": "Response appears reliable"
+          }
+        },
+        {
+          "question_id": 3,
+          "question": "Which organ produces insulin?",
+          "correct_answer": "C",
+          "predicted_answer": "A",
+          "is_correct": false,
+          "response": "The kidney produces insulin. The kidney is a organ that produces the most common cause of death in humans. It is the organ that produces the most common form of pancreatic cancer in humans. The kidney...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        },
+        {
+          "question_id": 4,
+          "question": "What is hypertension?",
+          "correct_answer": "B",
+          "predicted_answer": "B",
+          "is_correct": true,
+          "response": "Hypoxia is a type of heart disease that is caused by a mutation of the heart muscle, which is a condition in which the heart is able to move in slow enough movements. This mutation can cause a range o...",
+          "factual_consistency": {
+            "factual_consistency_score": 1.0,
+            "issues_found": [],
+            "confidence_indicators": [],
+            "assessment": "High consistency"
+          },
+          "hallucination_detection": {
+            "hallucination_score": 0.4,
+            "risk_level": "Medium Risk",
+            "detected_issues": [
+              "Internal contradictions detected"
+            ],
+            "recommendation": "Response needs human review before use"
+          }
+        }
+      ],
+      "timestamp": "2025-07-26T23:20:05.129960"
+    }
+  },
+  "summary": {
+    "overall_accuracy": 0.5024390243902439,
+    "total_questions": 205,
+    "total_correct": 103,
+    "benchmarks_evaluated": 5,
+    "memory_usage": {
+      "gpu_memory_allocated_gb": 0.7996292114257812,
+      "gpu_memory_reserved_gb": 2.59765625
+    }
+  }
+}
