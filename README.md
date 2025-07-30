@@ -79,7 +79,7 @@ lora_config = LoraConfig(
 
 ## 📈 **Comprehensive Evaluation Results**
 
-![Model Response Comparison](genAi.pdf)
+![Model Response Comparison](genai.png)
 
 **16 METRICS ACROSS 4 DIMENSIONS:**
 
