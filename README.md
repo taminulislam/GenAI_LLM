@@ -1,54 +1,52 @@
-# Medical LLM Fine-Tuning for Clinical Decision Support
+# MESA: Medical Evaluation across Safety and Accuracy 🏥
 
-A research project for fine-tuning large language models on medical datasets using parameter-efficient techniques optimized for RTX 3090.
+ Comprehensive study of fine-tuned language models for medical AI.
 
-## 🎯 Project Overview
-
-This project demonstrates how to achieve competitive medical AI performance using smaller, efficiently fine-tuned models rather than massive foundation models. Perfect for researchers with consumer-grade hardware who want to contribute to medical AI research.
-
-### Key Features
-- **Parameter-Efficient**: Uses QLoRA for 4-bit quantization and LoRA adapters
-- **RTX 3090 Optimized**: Carefully tuned for 24GB VRAM constraints  
-- **Multi-Dataset Training**: Combines multiple medical datasets for robust performance
-- **Publication-Ready**: Structured for academic research and paper submission
+## Key Results
+- **BioGPT-Large**: 67.2% exact match accuracy, 78.1% medical entity recognition
+- **DialoGPT-Small**: 100% safety rate, 0.22 GB GPU memory usage
+- **BioMedLM**: Balanced performance for educational applications
+- **20,000 medical samples** across 4 datasets
+- **16 evaluation metrics** spanning accuracy, safety, and efficiency
 
 ## 🚀 Quick Start
 
-### 1. Environment Setup
+<!-- ### 1. Use the Production Model (Ready to Use)
 ```bash
-# Clone this repository
-git clone <your-repo-url>
-cd medical-llm-finetuning
-
-# Install dependencies
-pip install torch transformers datasets accelerate
-pip install bitsandbytes peft trl wandb
-pip install evaluate scikit-learn
+# The trained model with 94% accuracy is ready to use
+cd experiments/real_medical_llm_20250723_011027/final_model/
+# Model files are available for immediate deployment
 ```
 
-### 2. Run Training
+### 2. Run the Complete Pipeline
 ```bash
+# For training from scratch or experimentation
 python quick_start.py
-```
 
-This will:
-- Load a medical QA dataset (239k samples)
-- Fine-tune a model using QLoRA
-- Save the trained model
-- Run a quick test
+# Or use the comprehensive pipeline
+cd comprehensive_medical_llm/scripts/
+python run_complete_pipeline.py
+``` -->
+
+### Notebooks (3-Experiments)
+```bash
+# Three main experimental implementations:
+jupyter notebook notebooks/Medical_DialoGPT-S.ipynb      # DialoGPT-small (350KB)
+jupyter notebook notebooks/Medical_BioMedLM.ipynb        # BioMedLM (354KB) 
+jupyter notebook notebooks/Medical_BioGPT-L.ipynb        # BioGPT-Large (369KB)
+
+
+```
 
 ## 📊 Datasets Used
 
-| Dataset | Size | Description |
-|---------|------|-------------|
-| `lavita/medical-qa-datasets` | 239k | Comprehensive medical QA |
-| `BI55/MedText` | 1.4k | High-quality clinical scenarios |
-| `AdaptLLM/medicine-LLM` | Various | ChemProt, RCT, specialized datasets |
-
-### Evaluation Benchmarks
-- **MedQA**: Medical exam questions
-- **MedMCQA**: Multiple choice medical questions  
-- **PubMedQA**: Biomedical literature QA
+| Dataset | Samples | Distribution | Focus |
+|---------|---------|--------------|-------|
+| med-qa-datasets | 5,000 | 25% | General Medical Q&A |
+| ai-med-chatbot | 5,000 | 25% | Clinical Dialogue |
+| med_flashcards | 5,000 | 25% | Clinical Knowledge |
+| wiki_med_terms | 5,000 | 25% | Medical Terminology |
+| **Total** | **20,000** | **100%** | **Comprehensive** |
 
 ## 🔧 Technical Details
 
@@ -79,163 +77,77 @@ lora_config = LoraConfig(
 - **LoRA Adapters**: Only train 0.1-1% of parameters
 - **Optimized Batch Size**: Balanced for RTX 3090's 24GB
 
-## 📈 Expected Results
+## 📈 **Comprehensive Evaluation Results**
 
-Based on current research trends, you should expect:
+![Model Response Comparison](genAi.pdf)
 
-| Metric | Target | SOTA Comparison |
-|--------|--------|-----------------|
-| MedQA Accuracy | 75-85% | GPT-4: ~86% |
-| MedMCQA Accuracy | 70-80% | GPT-4: ~75% |
-| Training Time | 6-12 hours | - |
-| Memory Usage | <20GB | Full FT: >80GB |
+**16 METRICS ACROSS 4 DIMENSIONS:**
 
-## 🏗️ Project Structure
+| Model | Exact Match Acc. | Medical Entity Rec. | Safety Rate | GPU Memory |
+|-------|------------------|-------------------|-------------|------------|
+| **BioGPT-Large** | **67.2%** | **78.1%** | 94.3% | 10.2 GB |
+| **BioMedLM** | 49.2% | 38.9% | 87.3% | 11.8 GB |
+| **DialoGPT-Small** | 50.2% | 42.5% | **100.0%** | **0.22 GB** |
+
+**Key Findings:**
+- **BioGPT-Large**: Best accuracy for clinical decision support
+- **DialoGPT-Small**: Perfect safety, minimal resources for patient-facing apps
+- **BioMedLM**: Balanced performance for educational use
+
+## Project Structure
 
 ```
-medical-llm-finetuning/
-├── project_setup.md       # Detailed project documentation
-├── quick_start.py         # Main training script
-├── README.md              # This file
-├── experiments/           # Experimental results and logs
-├── models/                # Saved models and checkpoints
-├── data/                  # Dataset cache and preprocessing
-└── evaluation/            # Benchmark evaluation scripts
+GenAI_LLM/
+├── notebooks/                                    # 🔬 Original Experiments
+│   ├── Medical_DialoGPT-S.ipynb                # Microsoft DialoGPT-small
+│   ├── Medical_BioMedLM.ipynb                  # Stanford BioMedLM  
+│   └── Medical_BioGPT-L.ipynb                  # Microsoft BioGPT-Large
+├── experiments/real_medical_llm_20250723_011027/ # 🏆 Production Model (94%)
+├── comprehensive_medical_llm/                   # Academic Implementation
+│   └── notebooks/Comprehensive_Medical_LLM_Pipeline.ipynb
+├── src/                                        # Core modules
+├── data/                                       # Medical datasets
+└── outputs/                                    # Results
 ```
 
-## 📚 Research Contributions
 
-### 1. Parameter Efficiency Analysis
-- Demonstrate 3B models competing with 70B+ models
-- Cost-benefit analysis of QLoRA vs full fine-tuning
-- Memory optimization for consumer hardware
 
-### 2. Multi-Dataset Clinical Reasoning
-- Performance across medical specialties
-- Knowledge transfer between datasets
-- Specialty-specific evaluation metrics
+## Experimental Notebooks
 
-### 3. Safety and Hallucination Detection
-- Uncertainty quantification methods
-- Medical fact-checking mechanisms
-- Clinical safety evaluation
+| Notebook | Model | Parameters | Focus |
+|----------|-------|------------|-------|
+| `Medical_DialoGPT-S.ipynb` | Microsoft DialoGPT-small | 117M | Conversational medical AI |
+| `Medical_BioMedLM.ipynb` | Stanford BioMedLM | 2.7B | Biomedical domain expertise |
+| `Medical_BioGPT-L.ipynb` | Microsoft BioGPT-Large | 347M | Large-scale medical reasoning |
 
-## 🎓 Publication Strategy
+## Technical Highlights
 
-### Target Venues
-- **Primary**: EMNLP, ACL, NAACL (NLP conferences)
-- **Secondary**: CHIL, JAMIA (medical informatics)
-- **Workshops**: Clinical NLP, AI for Healthcare
+- **Parameter Efficiency**: LoRA adaptation (5.44-9.59% trainable parameters)
+- **Multi-Dataset Training**: 20,000 samples across 4 medical datasets
+- **Comprehensive Evaluation**: 16 metrics across accuracy, safety, efficiency
+- **Hardware Compatibility**: RTX 3090 optimized (0.22-11.8 GB memory usage)
 
-### Paper Outline
-1. **Introduction**: Clinical AI + parameter efficiency challenges
-2. **Related Work**: Medical LLMs + efficient fine-tuning
-3. **Methodology**: Multi-dataset QLoRA approach
-4. **Experiments**: Comprehensive benchmark evaluation
-5. **Results**: Performance analysis + clinical insights
-6. **Discussion**: Safety, limitations, future work
+## Status: Project Completed ✅
 
-## 📋 Timeline (16 weeks)
+Comprehensive evaluation completed with 16 metrics across 3 model architectures.
+**Key Finding**: Optimal model selection depends on deployment context - accuracy vs safety vs efficiency.
 
-| Phase | Duration | Tasks |
-|-------|----------|-------|
-| **Setup** | Weeks 1-2 | Environment, data preprocessing, baselines |
-| **Training** | Weeks 3-8 | Single/multi-dataset training, optimization |
-| **Evaluation** | Weeks 9-12 | Benchmark testing, safety evaluation |
-| **Research** | Weeks 13-16 | Analysis, paper writing, submission |
+## Requirements
 
-## 💰 Budget Considerations
+- Python 3.8+
+- RTX 3090 or equivalent GPU
+- 16GB+ RAM
 
-### Computational Costs
-- **Training**: ~50-100 GPU hours on RTX 3090
-- **Evaluation**: ~20-30 GPU hours
-- **Total Hardware Cost**: $0 (using existing RTX 3090)
-
-### Optional Expenses
-- **API Costs**: ~$100 for GPT-4 baseline comparisons
-- **Storage**: Cloud storage for large datasets (~$20/month)
-
-## ⚠️ Important Considerations
-
-### Technical Limitations
-- **Memory Constraints**: Carefully tune batch sizes
-- **Training Stability**: Monitor for gradient explosions
-- **Evaluation Bias**: Ensure diverse test sets
-
-### Ethical Considerations
-- **Medical Accuracy**: Never use for actual medical advice
-- **Bias Detection**: Test across demographic groups
-- **Privacy**: Ensure all datasets are de-identified
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-#### Out of Memory (OOM)
-```python
-# Reduce batch size
-per_device_train_batch_size=2
-
-# Enable gradient checkpointing
-gradient_checkpointing=True
-
-# Reduce sequence length
-max_seq_length=512
+```bash
+pip install torch transformers datasets accelerate
+pip install bitsandbytes peft trl wandb evaluate scikit-learn
 ```
 
-#### Slow Training
-```python
-# Enable mixed precision
-fp16=True
+## License
 
-# Increase batch size with accumulation
-gradient_accumulation_steps=4
-```
+MIT License
 
-#### Poor Performance
-- Check data preprocessing
-- Verify prompt formatting
-- Increase training epochs
-- Try different learning rates
+## Contact
 
-## 🤝 Contributing
-
-We welcome contributions! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Add your improvements
-4. Submit a pull request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Hugging Face** for transformers and datasets
-- **Microsoft** for DeepSpeed optimizations
-- **Medical dataset contributors** for open-source datasets
-- **PEFT library** for parameter-efficient fine-tuning
-
-## 📞 Contact
-
-For questions about this research project:
-- Open an issue on GitHub
-- Email: [your-email@domain.com]
-- Twitter: [@your-handle]
-
----
-
-**🎯 Ready to start your medical AI research journey?**
-
-Run `python quick_start.py` and begin fine-tuning your first medical LLM!
-
-**📖 Next Steps:**
-1. Review `project_setup.md` for detailed methodology
-2. Experiment with different model sizes and datasets
-3. Evaluate on medical benchmarks
-4. Compare with baseline models
-5. Write and submit your research paper
-
-*Good luck with your research! 🚀*
+Open an issue on GitHub for questions.
 
